@@ -6,26 +6,15 @@ Main entry point for the Legal Compliance Engine.
     compliance(main file)
        |__ cuad_module.py
        |__ indian_module.py
-
-This is the ONLY file your teammate needs to import to plug this into the rest
-of the project. It takes one meeting sentence (or a list of them, from Member
-2's summariser) and returns the merged verdict across both branches.
-
-Usage:
-    from compliance_engine import ComplianceEngine
-
-    engine = ComplianceEngine()                     # loads both modules once
-    result = engine.analyze("We will terminate the agreement immediately.")
-    print(result["overall_compliance"], result["overall_reason"])
-
-    # or for a whole batch of keypoints from Member 2:
-    results = engine.analyze_batch(member2_keypoints)
+       |__ legal_signals.py   (NER + POS + chunking layer)
 """
 
+import re
 from typing import List, Dict, Any
 
 from cuad_module import CUADModule
 from indian_module import IndianCorpusModule
+from legal_signals import LegalSignals
 
 
 class ComplianceEngine:
@@ -33,18 +22,11 @@ class ComplianceEngine:
         kwargs = {"artifact_dir": cuad_artifact_dir} if cuad_artifact_dir else {}
         self.cuad = CUADModule(**kwargs)
         self.indian = IndianCorpusModule(artifact_dir=indian_artifact_dir)
+        self.signals = LegalSignals()
 
     # ------------------------------------------------------------------
     @staticmethod
     def _merge(cuad_result: Dict[str, Any], indian_result: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Merge policy (adjust to taste once both branches are real):
-        - either branch NON-COMPLIANT  -> overall NON-COMPLIANT
-        - else either branch NEEDS REVIEW -> overall NEEDS REVIEW
-        - else COMPLIANT
-        Ties are broken toward whichever branch found the more confident
-        (higher retrieval_score) match, for the displayed "reason".
-        """
         branches = [cuad_result, indian_result]
         verdicts = [b["compliance"] for b in branches]
 
@@ -72,17 +54,28 @@ class ComplianceEngine:
     def analyze(self, meeting_sentence: str) -> Dict[str, Any]:
         cuad_result = self.cuad.analyze(meeting_sentence)
         indian_result = self.indian.analyze(meeting_sentence)
-        return self._merge(cuad_result, indian_result)
+        merged = self._merge(cuad_result, indian_result)
+
+        # classical NLP layer: NER + POS + chunking
+        sig = self.signals.extract(meeting_sentence)
+        clauses = [c["clause"] for c in cuad_result["candidates_checked"]]
+        flags = self.signals.check_against_clauses(sig, clauses)
+
+        merged["linguistic_signals"] = sig
+        merged["rule_flags"] = flags
+
+        if flags:
+            if merged["overall_compliance"] == "COMPLIANT":
+                merged["overall_compliance"] = "NEEDS REVIEW"   # rules only escalate, never relax
+            merged["overall_reason"] += " | Rule check: " + flags[0]
+        return merged
 
     def analyze_batch(self, meeting_sentences: List[str]) -> List[Dict[str, Any]]:
         return [self.analyze(s) for s in meeting_sentences]
 
 
-import re
-
 def split_into_sentences(paragraph: str):
-    """Cuts one big paragraph into a list of individual sentences,
-    splitting at each '.', '!' or '?' followed by a space."""
+    """Cuts one big paragraph into individual sentences."""
     pieces = re.split(r'(?<=[.!?])\s+', paragraph.strip())
     return [p.strip() for p in pieces if p.strip()]
 
@@ -113,3 +106,23 @@ if __name__ == "__main__":
 
         print(f"\n--- Indian Corpus (law) details ---")
         print(f"  {result['indian_corpus']['reason']}")
+
+        print(f"\n--- Linguistic signals (NER / POS / chunking) ---")
+        sig = result["linguistic_signals"]
+        print(f"  Entities:   {sig['entities']}")
+        print(f"  Durations:  {sig['durations']}")
+        print(f"  Jurisdictions: {sig['jurisdictions']}")
+        print(f"  Modals:     {sig['modals']}")
+        print(f"  Negations:  {sig['negations']}")
+        print(f"  Chunks:     {sig['chunks']}")
+        for f in result["rule_flags"]:
+            print(f"  FLAG: {f}")
+            print(f"\n--- Linguistic signals (NER / POS / chunking) ---")
+            sig = result["linguistic_signals"]
+            for key in ("entities", "durations", "jurisdictions", "modals", "negations", "chunks"):
+                if sig[key]:
+                    print(f"  {key}: {sig[key]}")
+            if not result["rule_flags"]:
+                print("  (no rule flags)")
+            for f in result["rule_flags"]:
+                print(f"  FLAG: {f}")
