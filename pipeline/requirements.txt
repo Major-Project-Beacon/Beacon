@@ -1,0 +1,6 @@
+faster-whisper
+pyannote.audio
+torch
+transformers
+peft
+python-dotenv
