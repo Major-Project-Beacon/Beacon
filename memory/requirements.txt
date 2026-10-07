@@ -1,0 +1,6 @@
+google-genai
+python-dotenv
+pymongo
+langgraph
+sentence-transformers
+torch
