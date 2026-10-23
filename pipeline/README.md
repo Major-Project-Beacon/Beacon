@@ -139,6 +139,35 @@ $env:GEMINI_API_KEY = "YOUR_API_KEY"
 
 Confirm the actual variable name in the script before using this example. Never commit real API keys, credentials, or private `.env` files to GitHub.
 
+## Connecting Fact Extraction to `run_pipeline.py`
+
+`run_pipeline.py` is the orchestrator for the end-to-end pipeline. After audio processing, transcription, diarization, and speaker alignment produce `speaker_transcript.txt`, the orchestrator should pass that transcript to the fact-extraction module.
+
+### Import the extraction function
+
+At the top of `run_pipeline.py`, import the public function from `fact_extraction.py`:
+
+```python
+from fact_extraction import extract_facts
+```
+
+### Call fact extraction after creating the speaker transcript
+
+Once `speaker_transcript_path` points to the generated speaker-labelled transcript, call:
+
+```python
+facts_path = extract_facts(
+    transcript_file=speaker_transcript_path,
+    output_file=output_dir / "facts.json",
+)
+```
+
+This passes the output of the speaker-transcript stage into fact extraction and saves the resulting structured facts as `facts.json` in the pipeline's output directory. The call should occur after speaker-transcript generation has completed.
+
+For this integration, `fact_extraction.py` must expose an `extract_facts(transcript_file, output_file)` function that reads the supplied transcript, performs fact extraction, validates the result, and writes the JSON file. The orchestrator can then report `facts_path` as the final output.
+
+> **Note:** This section documents the intended connection. Confirm that the import, callable function, and invocation are present in the actual source code; adding documentation alone does not connect the modules or make the pipeline execute fact extraction.
+
 ## Running the Pipeline
 
 Run the fact-extraction script from the directory and with the arguments expected by its implementation.
