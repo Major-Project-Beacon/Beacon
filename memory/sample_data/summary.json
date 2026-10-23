@@ -1,0 +1,9 @@
+{
+  "meeting_id": "cloud-sync-2026-03-29",
+  "meeting_metadata": {
+    "title": "Cloud Infrastructure & Scalability Sync",
+    "date": "2026-03-29",
+    "language": "en"
+  },
+  "text_summary": "Cloud Infrastructure & Scalability Sync (2026-03-29):\nThe team evaluated container orchestration strategies and approved migrating the core authentication service to AWS EKS. SPEAKER_02 was assigned to write Terraform provisioning scripts by April 5, while SPEAKER_03 committed to delivering cost estimations by April 2."
+}

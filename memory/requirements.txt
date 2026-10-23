@@ -1,6 +1,3 @@
-google-genai
-python-dotenv
 pymongo
-langgraph
-sentence-transformers
-torch
+neo4j
+python-dotenv

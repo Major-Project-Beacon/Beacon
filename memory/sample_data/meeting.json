@@ -1,0 +1,62 @@
+{
+  "meeting_id": "cloud-sync-2026-03-29",
+  "meeting_metadata": {
+    "title": "Cloud Infrastructure & Scalability Sync",
+    "date": "2026-03-29",
+    "language": "en"
+  },
+  "key_points": [
+    {
+      "point": "Discussed migrating legacy microservices to Kubernetes clusters.",
+      "speaker": "SPEAKER_01",
+      "timestamp": "00:08:15",
+      "evidence": "We need better container orchestration for scaling."
+    }
+  ],
+  "decisions": [
+    {
+      "decision": "Migrate core user authentication service to AWS EKS by next month.",
+      "status": "approved",
+      "speaker": "SPEAKER_01",
+      "timestamp": "00:19:40",
+      "evidence": "Let's commit to EKS migration for the auth service."
+    }
+  ],
+  "action_items": [
+    {
+      "task": "Set up Terraform scripts for EKS cluster provisioning.",
+      "owner": "SPEAKER_02",
+      "deadline": "2026-04-05",
+      "status": "assigned",
+      "timestamp": "00:23:10",
+      "evidence": "I'll write the Terraform configurations this week."
+    }
+  ],
+  "commitments": [
+    {
+      "commitment": "Provide cost estimation and resource requirements for cloud migration.",
+      "committed_by": "SPEAKER_03",
+      "due_date": "2026-04-02",
+      "timestamp": "00:30:15",
+      "evidence": "I will share the cost breakdown by Thursday."
+    }
+  ],
+  "problems_and_risks": [
+    {
+      "issue": "Potential downtime during DNS propagation over the switchover window.",
+      "speaker": "SPEAKER_02",
+      "timestamp": "00:26:50",
+      "evidence": "We might face brief connection drops during DNS routing updates."
+    }
+  ],
+  "people_mentioned": [
+    {
+      "name": "SPEAKER_02",
+      "role_or_context": "Lead Infrastructure Engineer"
+    },
+    {
+      "name": "SPEAKER_03",
+      "role_or_context": "Cloud Financial Analyst"
+    }
+  ]
+}
