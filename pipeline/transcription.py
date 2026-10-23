@@ -1,5 +1,8 @@
 import os
 from pathlib import Path
+import subprocess
+from unittest import result
+import numpy as np
 
 
 # Add CUDA DLL locations so faster-whisper can find them on Windows
@@ -36,10 +39,27 @@ def transcribe_audio(audio_path: str, output_dir: str):
 
     print("Transcribing...")
 
+    result = subprocess.run(
+        [
+            "ffmpeg",
+            "-v", "error",
+            "-i", str(audio_path),
+            "-f", "f32le",
+            "-ac", "1",
+            "-ar", "16000",
+            "pipe:1",
+        ],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        check=True,
+    )
+
+    audio_array = np.frombuffer(result.stdout, dtype=np.float32)
+
     segments, info = model.transcribe(
-        audio_path,
+        audio_array,
         beam_size=5,
-        vad_filter=True
+        vad_filter=True,
     )
 
     segments = list(segments)

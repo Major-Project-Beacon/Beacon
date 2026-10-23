@@ -1,0 +1,70 @@
+{
+  "categories": {
+    "key_points": {
+      "TP": 0,
+      "FP": 9,
+      "FN": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "decisions": {
+      "TP": 0,
+      "FP": 4,
+      "FN": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "action_items": {
+      "TP": 0,
+      "FP": 5,
+      "FN": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "commitments": {
+      "TP": 0,
+      "FP": 3,
+      "FN": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "dates_and_deadlines": {
+      "TP": 0,
+      "FP": 4,
+      "FN": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "problems_and_risks": {
+      "TP": 0,
+      "FP": 5,
+      "FN": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "people_mentioned": {
+      "TP": 0,
+      "FP": 23,
+      "FN": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "micro": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "TP": 0,
+    "FP": 53,
+    "FN": 3
+  },
+  "macro_f1": 0.0,
+  "matching_method": "exact normalized field matching"
+}

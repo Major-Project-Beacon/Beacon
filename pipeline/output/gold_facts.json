@@ -1,0 +1,25 @@
+{
+  "key_points": [
+    {
+      "point": "The team discussed improving the onboarding process."
+    }
+  ],
+  "decisions": [
+    {
+      "decision": "Proceed with the revised onboarding design",
+      "status": "approved"
+    }
+  ],
+  "action_items": [
+    {
+      "task": "Prepare the revised mockup",
+      "owner": "SPEAKER_03",
+      "deadline": "2019-07-12",
+      "status": "assigned"
+    }
+  ],
+  "commitments": [],
+  "dates_and_deadlines": [],
+  "problems_and_risks": [],
+  "people_mentioned": []
+}

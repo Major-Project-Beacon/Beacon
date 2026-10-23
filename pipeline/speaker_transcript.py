@@ -2,106 +2,62 @@ import re
 from pathlib import Path
 
 
-OUTPUT_DIR = Path(r"D:\BEACON\pipeline\output")
+TRANSCRIPT_PATTERN = re.compile(
+    r"\[(\d+(?:\.\d+)?)\s*-\s*(\d+(?:\.\d+)?)\]\s*(.*)"
+)
 
-TRANSCRIPT_FILE = OUTPUT_DIR / "transcript.txt"
-DIARIZATION_FILE = OUTPUT_DIR / "diarization.txt"
-OUTPUT_FILE = OUTPUT_DIR / "speaker_transcript.txt"
+DIARIZATION_PATTERN = re.compile(
+    r"\[(\d+(?:\.\d+)?)\s*-\s*(\d+(?:\.\d+)?)\]\s*(\S+)"
+)
 
 
-def load_transcript():
-    """
-    Load Whisper transcript.
-
-    Expected format:
-    [start - end] text
-    """
-
-    pattern = re.compile(
-        r"\[(\d+(?:\.\d+)?)\s*-\s*(\d+(?:\.\d+)?)\]\s*(.*)"
-    )
-
+def load_transcript(transcript_file: str | Path):
     segments = []
 
-    with open(TRANSCRIPT_FILE, "r", encoding="utf-8") as f:
+    with open(transcript_file, "r", encoding="utf-8") as f:
         for line in f:
-            line = line.strip()
-
-            if not line:
-                continue
-
-            match = pattern.match(line)
-
+            match = TRANSCRIPT_PATTERN.match(line.strip())
             if not match:
                 continue
 
-            start = float(match.group(1))
-            end = float(match.group(2))
+            start, end = float(match.group(1)), float(match.group(2))
             text = match.group(3).strip()
 
             if text:
                 segments.append({
                     "start": start,
                     "end": end,
-                    "text": text
+                    "text": text,
                 })
 
     return segments
 
 
-def load_diarization():
-    """
-    Load pyannote diarization output.
-
-    Expected format:
-    [start - end] SPEAKER_XX
-    """
-
-    pattern = re.compile(
-        r"\[(\d+(?:\.\d+)?)\s*-\s*(\d+(?:\.\d+)?)\]\s*(\S+)"
-    )
-
+def load_diarization(diarization_file: str | Path):
     turns = []
 
-    with open(DIARIZATION_FILE, "r", encoding="utf-8") as f:
+    with open(diarization_file, "r", encoding="utf-8") as f:
         for line in f:
-            line = line.strip()
-
-            if not line:
-                continue
-
-            match = pattern.match(line)
-
+            match = DIARIZATION_PATTERN.match(line.strip())
             if not match:
                 continue
 
-            start = float(match.group(1))
-            end = float(match.group(2))
-            speaker = match.group(3)
-
             turns.append({
-                "start": start,
-                "end": end,
-                "speaker": speaker
+                "start": float(match.group(1)),
+                "end": float(match.group(2)),
+                "speaker": match.group(3),
             })
 
     return turns
 
 
 def find_speaker(segment, diarization):
-    """
-    Find the speaker with the largest temporal overlap
-    with a Whisper segment.
-    """
-
     best_speaker = "UNKNOWN"
     best_overlap = 0.0
 
     for turn in diarization:
-
         overlap_start = max(segment["start"], turn["start"])
         overlap_end = min(segment["end"], turn["end"])
-
         overlap = max(0.0, overlap_end - overlap_start)
 
         if overlap > best_overlap:
@@ -111,60 +67,55 @@ def find_speaker(segment, diarization):
     return best_speaker
 
 
-def merge_transcript():
+def merge_transcript(
+    transcript_file: str | Path,
+    diarization_file: str | Path,
+    output_file: str | Path,
+) -> str:
+    transcript_file = Path(transcript_file)
+    diarization_file = Path(diarization_file)
+    output_file = Path(output_file)
 
-    if not TRANSCRIPT_FILE.exists():
-        raise FileNotFoundError(
-            f"Transcript not found:\n{TRANSCRIPT_FILE}"
-        )
+    if not transcript_file.exists():
+        raise FileNotFoundError(f"Transcript not found: {transcript_file}")
 
-    if not DIARIZATION_FILE.exists():
-        raise FileNotFoundError(
-            f"Diarization file not found:\n{DIARIZATION_FILE}"
-        )
+    if not diarization_file.exists():
+        raise FileNotFoundError(f"Diarization not found: {diarization_file}")
 
-    print("Loading Whisper transcript...")
-    transcript = load_transcript()
+    output_file.parent.mkdir(parents=True, exist_ok=True)
 
-    print(f"Transcript segments: {len(transcript)}")
-
-    print("Loading diarization...")
-    diarization = load_diarization()
-
-    print(f"Diarization turns: {len(diarization)}")
-
-    print("Merging transcript with speakers...")
+    transcript = load_transcript(transcript_file)
+    diarization = load_diarization(diarization_file)
 
     merged = []
 
     for segment in transcript:
-
-        speaker = find_speaker(
-            segment,
-            diarization
-        )
+        speaker = find_speaker(segment, diarization)
 
         merged.append({
-            "start": segment["start"],
-            "end": segment["end"],
+            **segment,
             "speaker": speaker,
-            "text": segment["text"]
         })
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-
+    with open(output_file, "w", encoding="utf-8") as f:
         for item in merged:
-
             f.write(
                 f"[{item['start']:.2f} - {item['end']:.2f}] "
-                f"{item['speaker']}: "
-                f"{item['text']}\n"
+                f"{item['speaker']}: {item['text']}\n"
             )
 
-    print("\nSpeaker transcript created successfully.")
-    print(f"Segments: {len(merged)}")
-    print(f"Saved to: {OUTPUT_FILE}")
+    print(f"Speaker transcript saved: {output_file}")
+    print(f"Segments aligned: {len(merged)}")
+
+    return str(output_file)
 
 
 if __name__ == "__main__":
-    merge_transcript()
+    # Temporary standalone test paths. Change these to your files.
+    output_dir = Path(__file__).parent / "output"
+
+    merge_transcript(
+        transcript_file=output_dir / "transcript.txt",
+        diarization_file=output_dir / "diarization.txt",
+        output_file=output_dir / "speaker_transcript.txt",
+    )

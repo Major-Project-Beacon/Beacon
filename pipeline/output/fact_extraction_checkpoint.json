@@ -1,0 +1,508 @@
+{
+  "model": "gemini-3.1-flash-lite",
+  "chunk_count": 6,
+  "transcript_hash": "9ce24fb0c97789d909251b587c6fedd487dc85d12ca6de13c41c68959755e3af",
+  "chunk_results": [
+    {
+      "executive_summary": "The meeting covered administrative reminders, including an upcoming book club, a customer interview survey, and a team engagement pulse survey. The team reviewed progress on product category maturity pages, discussed updates to the handbook regarding customer feedback priority, and noted recent hiring successes in the 'Manage' area.",
+      "meeting_metadata": {
+        "title": null,
+        "date": null,
+        "language": "English"
+      },
+      "key_points": [
+        {
+          "point": "A book club discussion for the book 'Inspired' is scheduled for August 7th.",
+          "speaker": "SPEAKER_08",
+          "timestamp": "30.02 - 33.02",
+          "evidence": "We have a book club coming up on inspired in four weeks on August 7th."
+        },
+        {
+          "point": "The team is expected to utilize a spreadsheet of customer contacts provided by CS and sales to ensure goodwill.",
+          "speaker": "SPEAKER_08",
+          "timestamp": "73.90 - 84.90",
+          "evidence": "Remember, there's this interview spreadsheet CS and sales have. Populated that with a number of customer contacts for meetings. Please do follow up on that."
+        },
+        {
+          "point": "Engagement surveys will be conducted monthly in Q3.",
+          "speaker": "SPEAKER_08",
+          "timestamp": "100.90 - 104.90",
+          "evidence": "I'm going to run this once a month. In Q3."
+        },
+        {
+          "point": "There is a goal for each PM to complete at least three customer interviews within three weeks to close out Q2.",
+          "speaker": "SPEAKER_08",
+          "timestamp": "191.55 - 206.55",
+          "evidence": "we have a goal of at least three customer interviews per PM. ... remember we have three weeks until Q2 to hit our goal."
+        },
+        {
+          "point": "Category maturity pages have been updated by Josh to include better visualizations.",
+          "speaker": "SPEAKER_08",
+          "timestamp": "216.90 - 225.90",
+          "evidence": "Josh did a great job of creating some new views. ... one of which is sort of this flow chart showing how mature we're going to be at a given point in time"
+        },
+        {
+          "point": "Gabe Weaver has been hired to lead a third group in the 'Manage' area.",
+          "speaker": "SPEAKER_08",
+          "timestamp": "283.22 - 307.57",
+          "evidence": "we're going to target Gabe for a third managed PM. ... And Gabe will lead that."
+        },
+        {
+          "point": "Dove Hershkovits has been hired as the APM monitoring.",
+          "speaker": "SPEAKER_08",
+          "timestamp": "309.57 - 313.57",
+          "evidence": "And dove Hershkovits. We just hired him. As the APM monitoring."
+        },
+        {
+          "point": "The team is shifting handbook language to emphasize being 'customer first' rather than prioritizing internal feedback over external feedback.",
+          "speaker": "SPEAKER_08",
+          "timestamp": "418.65 - 435.65",
+          "evidence": "And both Christie and I want to. Move off of that position. Like we should be customer first. ... I don't want people to interpret that our own internal opinion is worth 10 times more than a customer's opinion."
+        }
+      ],
+      "decisions": [],
+      "action_items": [
+        {
+          "task": "Update the new hire onboarding document to include the book 'Inspired'.",
+          "owner": "SPEAKER_08",
+          "deadline": null,
+          "status": "proposed",
+          "speaker": "SPEAKER_08",
+          "timestamp": "54.02 - 57.02",
+          "evidence": "I think I'm going to update the new hire. Onboarding doc and ask all new hires to read this as well."
+        },
+        {
+          "task": "Ask Jessica to resend the engagement survey to Fabian and Karina.",
+          "owner": "SPEAKER_08",
+          "deadline": null,
+          "status": "assigned",
+          "speaker": "SPEAKER_08",
+          "timestamp": "133.90 - 162.90",
+          "evidence": "I'll ask Jessica to re send that to you. ... So I'll ask Jessica to send it to Fabian and Karina."
+        },
+        {
+          "task": "Review category maturity pages and confirm accuracy or update them.",
+          "owner": null,
+          "deadline": null,
+          "status": "proposed",
+          "speaker": "SPEAKER_08",
+          "timestamp": "233.90 - 240.30",
+          "evidence": "If you haven't already, please go in and either confirm that it's accurate or update it."
+        }
+      ],
+      "commitments": [
+        {
+          "commitment": "Resend the survey to those who did not receive it.",
+          "committed_by": "SPEAKER_08",
+          "due_date": null,
+          "timestamp": "130.90 - 136.90",
+          "evidence": "Need to get it to you. All right. I will. I'll ask Jessica to re send that to you."
+        }
+      ],
+      "dates_and_deadlines": [
+        {
+          "date_or_deadline": "August 7th",
+          "event": "Book club discussion on 'Inspired'",
+          "source_timestamp": "32.02 - 33.02"
+        },
+        {
+          "date_or_deadline": "three weeks",
+          "event": "Time remaining to hit the Q2 goal for customer interviews",
+          "source_timestamp": "203.55 - 206.55"
+        }
+      ],
+      "problems_and_risks": [
+        {
+          "issue": "Some employees did not receive the engagement survey.",
+          "speaker": "SPEAKER_04",
+          "timestamp": "120.90 - 128.90",
+          "evidence": "Fabia didn't receive it. I'm pretty sure I went through my emails."
+        },
+        {
+          "issue": "Concerns regarding the accuracy of maturity forecasting in current documentation.",
+          "speaker": "SPEAKER_08",
+          "timestamp": "226.90 - 233.90",
+          "evidence": "which raised questions about whether, uh, we were forecasting that accurately."
+        }
+      ]
+    },
+    {
+      "executive_summary": "The discussion centered on reinforcing the 'dogfooding' initiative, clarifying that it involves early internal testing while still seeking external customer feedback. The group also reviewed the 12/2 kickoff meeting, noting the value of visual aids (including low-fidelity mockups) in communicating product changes, and highlighted the importance of focusing presentations on the problem space for clarity.",
+      "meeting_metadata": {
+        "title": "12/2 Kickoff Feedback",
+        "date": null,
+        "language": "English"
+      },
+      "key_points": [
+        {
+          "point": "The company maintains a strong directive to prioritize internal testing ('dogfooding') of features.",
+          "speaker": "SPEAKER_08",
+          "timestamp": "543.88 - 545.88",
+          "evidence": "We very much still want to dog food."
+        },
+        {
+          "point": "Internal teams should be treated as early customers for feedback, but internal opinion should not be over-indexed at the expense of external feedback.",
+          "speaker": "SPEAKER_08",
+          "timestamp": "573.88 - 582.88",
+          "evidence": "But. Let's not over rotate on internal feedback or internal opinion. Let's still seek external feedback too. Cause that's just one customer of many."
+        },
+        {
+          "point": "Sarah O'Donnell's team is releasing quick training videos on customer discovery topics starting this week.",
+          "speaker": "SPEAKER_08",
+          "timestamp": "591.88 - 603.88",
+          "evidence": "Sarah O'Donnell and her team are going to do a bunch of sort of quick videos on a variety of customer discovery topics. [...] I think starting this week."
+        },
+        {
+          "point": "Participants are encouraged to use screenshots or low-fidelity mockups (e.g., Balsamic, Google Slides) in kickoff meetings when UX design is not yet ready or necessary.",
+          "speaker": "SPEAKER_07",
+          "timestamp": "810.55 - 819.55",
+          "evidence": "You should feel free that you, you know, you're empowered to take, um, a tool that you're comfortable with, even if it might even be just like Google slides and make something."
+        },
+        {
+          "point": "Presentations should be focused on the problem to ensure they are understandable to audiences unfamiliar with the specific feature.",
+          "speaker": "SPEAKER_08",
+          "timestamp": "848.55 - 856.55",
+          "evidence": "it's important to be able to pitch these things in ways that people that aren't close to it, can understand. [...] How do I explain this to someone who's cold? Who doesn't know a darn thing about this?"
+        }
+      ],
+      "decisions": [],
+      "action_items": [],
+      "commitments": [
+        {
+          "commitment": "The team will release customer discovery training videos as they become available.",
+          "committed_by": "SPEAKER_08",
+          "due_date": null,
+          "timestamp": "605.88 - 607.88",
+          "evidence": "We'll release those to you as they come out."
+        },
+        {
+          "commitment": "Training videos will be embedded in the 'how we work' description on the team page.",
+          "committed_by": "SPEAKER_08",
+          "due_date": null,
+          "timestamp": "607.88 - 617.25",
+          "evidence": "We'll embed them. In the, uh, how we work. Description on our team page as well."
+        }
+      ],
+      "dates_and_deadlines": [
+        {
+          "date_or_deadline": "this week",
+          "event": "Start of release for customer discovery training videos",
+          "source_timestamp": "601.88 - 603.88"
+        },
+        {
+          "date_or_deadline": "12/2",
+          "event": "Kickoff feedback meeting referenced",
+          "source_timestamp": "620.25 - 620.25"
+        }
+      ],
+      "problems_and_risks": [
+        {
+          "issue": "Lack of visual aids (screenshots/mockups) in some kickoff presentations.",
+          "speaker": "SPEAKER_08",
+          "timestamp": "636.55 - 639.55",
+          "evidence": "There were a bunch that did not have them."
+        },
+        {
+          "issue": "Risk of over-rotating on internal feedback/opinions.",
+          "speaker": "SPEAKER_08",
+          "timestamp": "573.88 - 577.88",
+          "evidence": "Let's not over rotate on internal feedback or internal opinion."
+        }
+      ]
+    },
+    {
+      "executive_summary": "The team held a discussion regarding the format and time constraints of the release kickoff meeting, noting that increasing attendance and technical complexity have made the current 30-minute synchronous format difficult to maintain. Participants explored potential changes, including shifting to thematic storytelling, pre-recording technical content, or creating separate tracks for internal and external audiences. Kenny has initiated an issue to address this, and the group intends to evaluate alternatives before the next release kickoff.",
+      "meeting_metadata": {
+        "title": null,
+        "date": null,
+        "language": "English"
+      },
+      "key_points": [
+        {
+          "point": "The product team struggles with effectively communicating technical terminology and depth within current time constraints.",
+          "speaker": "SPEAKER_00",
+          "timestamp": "871.55 - 880.55",
+          "evidence": "even before I've joined get lab, uh, for many people is how to, how to get there on some of this terminology. Um, when those of us have. Deep technical background."
+        },
+        {
+          "point": "The team suggests using thematic grouping or recorded videos for complex topics to allow for high-level customer value summaries in meetings.",
+          "speaker": "SPEAKER_08",
+          "timestamp": "953.11 - 984.11",
+          "evidence": "if there are some that relate to each other, you could tell a story. ... And then you can just cover the customer value at a high level and leave the detail to the video."
+        },
+        {
+          "point": "There is a concern that the current 30-minute limit causes a disservice by preventing meaningful communication of technical problems as categories mature.",
+          "speaker": "SPEAKER_03",
+          "timestamp": "1109.34 - 1124.34",
+          "evidence": "I feel like we're doing it this service because we're now. Highlighting much less because we feel like we have a time constraint and need to keep it into one synchronous 30 minute block."
+        },
+        {
+          "point": "Previous attempts at a 'release radar' external webinar were reportedly poorly attended and eventually ended by product marketing.",
+          "speaker": "SPEAKER_06",
+          "timestamp": "1186.68 - 1205.68",
+          "evidence": "There was a webinar that used to happen called release radar. ... and they were pretty poorly attended from what my experience was. And I think they actually got ended by the product marketing team for that reason."
+        },
+        {
+          "point": "The team distinguishes between 'UX discovery sprints' focused on iteration/research and 'product discovery sprints' focused on building towards an MVC synchronously.",
+          "speaker": "SPEAKER_06",
+          "timestamp": "1335.10 - 1359.10",
+          "evidence": "The product discovery sprint is more focused on kind of like actually building something, iterating on something that's built and trying to get to some sort of MVC really quickly by trying to make the process more synchronous."
+        }
+      ],
+      "decisions": [],
+      "action_items": [
+        {
+          "task": "Evaluate alternatives to the release kickoff meeting format.",
+          "owner": null,
+          "deadline": "prior to next release kickoff",
+          "status": "proposed",
+          "speaker": "SPEAKER_03",
+          "timestamp": "1098.34 - 1106.34",
+          "evidence": "we should discuss it in an issue and come up with something I do think prior to next release kickoff. Just to evaluate alternatives to the format."
+        },
+        {
+          "task": "Solicit feedback from internal and external constituents regarding the kickoff meeting format.",
+          "owner": null,
+          "deadline": null,
+          "status": "proposed",
+          "speaker": "SPEAKER_08",
+          "timestamp": "1258.68 - 1266.68",
+          "evidence": "I also like the idea of asking internal and external constituents what they like or don't like about the format."
+        }
+      ],
+      "commitments": [],
+      "dates_and_deadlines": [
+        {
+          "date_or_deadline": "prior to next release kickoff",
+          "event": "Evaluate alternatives to the release kickoff format",
+          "source_timestamp": "1098.34 - 1102.34"
+        }
+      ],
+      "problems_and_risks": [
+        {
+          "issue": "The release kickoff is becoming unmanageable due to the growing number of presenters (up to 25 expected) and time constraints.",
+          "speaker": "SPEAKER_03",
+          "timestamp": "1050.34 - 1059.34",
+          "evidence": "we're going to have next month, we're going to have 25 people. Trying to give content and even at two minutes, you're already gone."
+        }
+      ]
+    },
+    {
+      "executive_summary": "The discussion focuses on two main topics: the challenges of running design sprints in an asynchronous/remote team structure and recent infrastructure outages related to GitLab.com. For design sprints, the team discussed balancing deep-focus work with the need for continuous productivity and scalability. Regarding infrastructure, Christopher highlighted recent performance outages caused by Redis load, citing unconstrained JUnit test caching as a specific example. There is consensus that performance, scalability, and resource usage must be treated as proactive product concerns rather than reactive fixes, potentially involving SRE involvement in the early product pipeline.",
+      "meeting_metadata": {
+        "title": null,
+        "date": null,
+        "language": "English"
+      },
+      "key_points": [
+        {
+          "point": "The source code group is using file-by-file diff navigation in 12.3 to address usability and performance.",
+          "speaker": "SPEAKER_06",
+          "timestamp": "1359.10 - 1372.10",
+          "evidence": "So the source code group is going to try and do that around file-by-file diff navigation to solve performance and usability problems in 12.3."
+        },
+        {
+          "point": "The team faces challenges in maintaining design sprints asynchronously, specifically with time zone overlaps and excluding remote team members.",
+          "speaker": "SPEAKER_06",
+          "timestamp": "1382.10 - 1408.10",
+          "evidence": "So we're looking at trying to confine the participants in a specific time zone so that we can all be available with a significant amount of overlap. But that's also difficult because it kind of excludes automatically 50% of the team"
+        },
+        {
+          "point": "There is a proposal to use Google Ventures (GV) for design sprints if the opportunity arises.",
+          "speaker": "SPEAKER_08",
+          "timestamp": "1431.10 - 1454.10",
+          "evidence": "Well let me just say we have the option to run one with Google Ventures, who's one of our investors in that sprint book that Fabian linked to, was written by a guy from GV. They did hundreds of these things for their clients. They know what they're doing. So if we get a chance to do one with them, we should."
+        },
+        {
+          "point": "Design sprints are considered most useful for solving complex, high-uncertainty problems at the early stages of a product.",
+          "speaker": "SPEAKER_01",
+          "timestamp": "1534.41 - 1554.41",
+          "evidence": "I think it's also most relevant for stages that are very in various stages in the very beginning. ... And I think these are the problems that the design sprint is useful."
+        },
+        {
+          "point": "Recent GitLab.com outages have necessitated a focus on performance and availability, including the creation of an infrastructure-to-development board.",
+          "speaker": "SPEAKER_02",
+          "timestamp": "1576.80 - 1618.80",
+          "evidence": "we've had a significant number of outages related to dot com and that affected at least one customer revenue potential... we started infrastructure to development board where we're going to start matching issues up"
+        },
+        {
+          "point": "Redis performance issues were linked to unconstrained caching of JUnit test results, resulting in large data transfers.",
+          "speaker": "SPEAKER_02",
+          "timestamp": "1639.80 - 1659.80",
+          "evidence": "the Redis server apparently can't handle the load anymore... And there was no limit on the number of unit tests that could actually be cashed. So we were getting these like blocks of like several megabytes of data"
+        },
+        {
+          "point": "Performance issues are generally categorized as bugs.",
+          "speaker": "SPEAKER_04",
+          "timestamp": "1696.80 - 1701.80",
+          "evidence": "We do have a performance label, but they should be under under bugs."
+        },
+        {
+          "point": "There is a suggestion to involve SRE counterparts early in the product development pipeline to assess the scalability and performance impact of new features.",
+          "speaker": "SPEAKER_03",
+          "timestamp": "1808.80 - 1819.80",
+          "evidence": "maybe that's an opportunity for our infrastructure SRE stable counterparts to be involved in vetting and looking at issues early in the pipeline"
+        }
+      ],
+      "decisions": [],
+      "action_items": [
+        {
+          "task": "Feed back findings from the design sprint attempt.",
+          "owner": "James",
+          "deadline": null,
+          "status": "unclear",
+          "speaker": "SPEAKER_08",
+          "timestamp": "1459.10 - 1462.10",
+          "evidence": "So whatever you learn from yours, James, please feed that back."
+        }
+      ],
+      "commitments": [],
+      "dates_and_deadlines": [
+        {
+          "date_or_deadline": "12.3",
+          "event": "Version for implementing file-by-file diff navigation.",
+          "source_timestamp": "1366.10 - 1372.10"
+        }
+      ],
+      "problems_and_risks": [
+        {
+          "issue": "Design sprint sustainability and scalability challenges.",
+          "speaker": "SPEAKER_06",
+          "timestamp": "1476.10 - 1487.10",
+          "evidence": "it's not sustainable to be doing design sprints or discovery sprints on a daily basis. Whether or not we were in person or not, it's not scalable to actually sprint all the time."
+        },
+        {
+          "issue": "GitLab.com outages causing revenue impact.",
+          "speaker": "SPEAKER_02",
+          "timestamp": "1576.80 - 1587.80",
+          "evidence": "we've had a significant number of outages related to dot com and that affected at least one customer revenue potential."
+        }
+      ]
+    },
+    {
+      "executive_summary": "The meeting covers two main topics: 'dog fooding' practices/performance standards for features on GitLab.com and the organization of the product delivery process. Participants discussed the need for better integration between engineering and infrastructure teams, potentially updating the definition of 'done' to include performance at scale on GitLab.com. There is also a push toward a 'dual-track agile' methodology in the release area to better manage oversized features, though there is a concurrent company-wide effort to define the software development lifecycle that may require coordination.",
+      "meeting_metadata": {
+        "title": null,
+        "date": null,
+        "language": "English"
+      },
+      "key_points": [
+        {
+          "point": "The current process for 'dog fooding' new features on GitLab.com is unclear to some participants, leading to uncertainty about how to ensure scalability.",
+          "speaker": "SPEAKER_00",
+          "timestamp": "1947.88 - 1978.88",
+          "evidence": "And the dog fooding thing on that front is a little confusing to me. I met with Marin to talk about that. And, you know, there's sort of this mentality of looking at.com first are leading with.com for scalability. And I just, it's not really Chris to me where we're going from making sure that we're, you know, how we approach making sure that we intact scalability for.com if we're starting with.com or are we starting somewhere else from a dog fooding perspective."
+        },
+        {
+          "point": "Performance is considered a feature, and while early-stage features may not require immediate massive scale, there is a tendency to address performance issues only after they become fires.",
+          "speaker": "SPEAKER_06",
+          "timestamp": "2012.88 - 2067.88",
+          "evidence": "Performance is very much a feature and should be considered that. ... I would agree that particularly coming from a team that's digging out a lot of technical debt and solving a lot of performance problems all the time, would probably historically not being very good at picking the right moment to pay off technical debt and address performance problems until they've become fires."
+        },
+        {
+          "point": "Successful implementation of new features on GitLab.com requires proactive communication and coordination with the infrastructure team.",
+          "speaker": "SPEAKER_06",
+          "timestamp": "2160.88 - 2170.88",
+          "evidence": "I agree. It needs to be proactive. We're not going to ship something's useful or that the infrastructure team is going to want to opt into unless we've had a conversation with them in advance."
+        },
+        {
+          "point": "There is a proposal to update the 'definition of done' to explicitly require that features run successfully at scale on GitLab.com.",
+          "speaker": "SPEAKER_05",
+          "timestamp": "2216.88 - 2235.88",
+          "evidence": "I think we definitely need to have a stronger definition of done as part of our progressives delivery, right? And so part of the definition of done is it needs to run at scale and gitlab.com successfully and not below the cost model, not below performance."
+        },
+        {
+          "point": "The release team is piloting a 'dual-track agile' approach to address oversized issues, involving a discovery phase followed by delivery.",
+          "speaker": "SPEAKER_00",
+          "timestamp": "2398.88 - 2411.88",
+          "evidence": "And the second piece is that this experiment running is we're leveraging semi dual track agile approach, just to organize our conversation. open issues for areas that we need a discovery beat versus presenting an issue that is actually ready for delivery."
+        }
+      ],
+      "decisions": [],
+      "action_items": [
+        {
+          "task": "Provide thoughts on an issue regarding how to handle the 'definition of done' and performance/scale considerations.",
+          "owner": "Christopher",
+          "deadline": null,
+          "status": "proposed",
+          "speaker": "SPEAKER_08",
+          "timestamp": "2297.88 - 2309.88",
+          "evidence": "Christopher, please pile on that issue with thoughts on how to how to handle this. So like you're suggesting on definition of done, Josh."
+        }
+      ],
+      "commitments": [],
+      "dates_and_deadlines": [
+        {
+          "date_or_deadline": "12.1",
+          "event": "shipping the first iteration of confidential merge requests",
+          "source_timestamp": "2147.88 - 2150.88"
+        },
+        {
+          "date_or_deadline": "20 to 30 day lead time",
+          "event": "time to commit release",
+          "source_timestamp": "2433.88 - 2446.88"
+        }
+      ],
+      "problems_and_risks": [
+        {
+          "issue": "Lack of clarity regarding the process for dog fooding to ensure scalability on .com.",
+          "speaker": "SPEAKER_00",
+          "timestamp": "2112.88 - 2122.88",
+          "evidence": "And so it's like the approach and process moving forward to dog food in the right spots is not clear to me or what the best practices have been or if anybody's, you know, crack that."
+        },
+        {
+          "issue": "Historical failure to address technical debt and performance until problems become fires.",
+          "speaker": "SPEAKER_06",
+          "timestamp": "2058.88 - 2067.88",
+          "evidence": "would probably historically not being very good at picking the right moment to pay off technical debt and address performance problems until they've become fires."
+        }
+      ]
+    },
+    {
+      "executive_summary": "The team discussed a process change where a 'promise' label was renamed to 'playing priority' to clarify that feature promises should not be made. Product managers are designated as the only ones authorized to apply this label, which serves as a flag for issues with conditional dependencies.",
+      "meeting_metadata": {
+        "title": null,
+        "date": null,
+        "language": "English"
+      },
+      "key_points": [
+        {
+          "point": "A label previously named 'promise' has been renamed to 'playing priority'.",
+          "speaker": "SPEAKER_05",
+          "timestamp": "2508.02 - 2515.62",
+          "evidence": "I just went through a renamed promise label to playing priority."
+        },
+        {
+          "point": "The label is intended to remind product managers that an issue has important conditional dependencies.",
+          "speaker": "SPEAKER_05",
+          "timestamp": "2522.62 - 2530.62",
+          "evidence": "And that way it's reminder for pms that this issue had some important select conditional dependencies and so just be aware of it."
+        },
+        {
+          "point": "The label should only be applied by the responsible product manager for the respective section.",
+          "speaker": "SPEAKER_05",
+          "timestamp": "2532.62 - 2540.62",
+          "evidence": "I did note in the label text that it should only be applied by product managers and in particular the responsible product manager for that section."
+        }
+      ],
+      "decisions": [],
+      "action_items": [],
+      "commitments": [],
+      "dates_and_deadlines": [
+        {
+          "date_or_deadline": "Tuesday",
+          "event": "Closing the meeting",
+          "source_timestamp": "2557.07 - 2559.07"
+        }
+      ],
+      "problems_and_risks": [
+        {
+          "issue": "Risk associated with promising features in issues.",
+          "speaker": "SPEAKER_05",
+          "timestamp": "2515.62 - 2522.62",
+          "evidence": "General meaning is large in the same although we shouldn't be promising features and so this is just a way to flag it."
+        }
+      ]
+    }
+  ]
+}

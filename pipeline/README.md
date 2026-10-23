@@ -1,904 +1,239 @@
 # BEACON Fact Extraction Pipeline
 
-This module contains the speech-processing and fact-extraction pipeline developed for **BEACON**.
+## Overview
 
-The pipeline converts a meeting video into a speaker-labelled transcript and then extracts important factual information from the meeting using the BEACON fact-extraction model.
+The BEACON Fact Extraction Pipeline processes meeting transcripts and extracts structured, evidence-backed information from conversations.
 
----
+It converts unstructured meeting dialogue into a machine-readable JSON output containing key facts such as discussion points, decisions, action items, commitments, people mentioned, and relevant dates or deadlines.
 
-## 1. Pipeline Overview
+The extracted information can be used by downstream BEACON components for meeting understanding, summarization, compliance analysis, and knowledge organization.
+
+## Objectives
+
+- Extract important information from meeting transcripts.
+- Preserve evidence from the original conversation for extracted facts.
+- Identify decisions, tasks, commitments, and other meeting information.
+- Produce structured JSON that downstream modules can consume.
+- Reduce unsupported or inferred claims by grounding extraction in the transcript.
+- Support integration with the wider BEACON pipeline.
+
+## Pipeline Workflow
+
+The pipeline follows these general stages:
+
+1. **Transcript input**  
+   Load the meeting transcript supplied to the extraction program.
+
+2. **Prompt preparation**  
+   Prepare instructions that guide the model to extract relevant facts using the transcript as the source.
+
+3. **LLM-based fact extraction**  
+   Submit the transcript and extraction instructions to the configured Gemini model.
+
+4. **Response processing**  
+   Process the model response and obtain the structured extraction result.
+
+5. **Validation**  
+   Check that the response follows the expected JSON structure and required fields.
+
+6. **Output generation**  
+   Save the extracted information as a JSON file for inspection or use by subsequent BEACON modules.
+
+7. **Downstream integration**  
+   Make the validated facts available to other pipeline components.
+
+> The exact input paths, validation rules, and output schema are defined by the implementation. Refer to the extraction script and its configuration for the authoritative details.
+
+## Information Extracted
+
+Depending on the transcript and the extraction schema, the output may include:
+
+| Information category | Description |
+|---|---|
+| Key points | Important discussion topics and meeting highlights |
+| Decisions | Decisions or proposed decisions, including their status when supported |
+| Action items | Tasks, assigned owners, and deadlines when stated |
+| Commitments | Promises or responsibilities agreed upon by participants |
+| People mentioned | Participants and other individuals referenced |
+| Dates and deadlines | Dates, milestones, and time-related obligations |
+| Supporting evidence | Transcript excerpts that support extracted information |
+
+The pipeline should not treat a suggestion as an approved decision, assign an owner without evidence, or invent a deadline when the transcript does not provide one.
+
+## Technology Stack
+
+- **Python** – pipeline implementation
+- **Google Gemini API** – LLM-based fact extraction
+- **JSON** – structured extraction output
+- **Git and GitHub** – source control and team collaboration
+
+The exact Python packages and model configuration are specified in the project’s dependency and extraction files.
+
+## Repository Structure
+
+The fact-extraction branch contains the pipeline module. A simplified structure is shown below:
 
 ```text
-Meeting Video
-      │
-      ▼
-Audio Extraction
-      │
-      ▼
-16 kHz Mono WAV
-      │
-      ▼
-Speech-to-Text
-(Faster-Whisper)
-      │
-      ▼
-Speaker Diarization
-(pyannote)
-      │
-      ▼
-Speaker-Labelled Transcript
-      │
-      ▼
-BEACON Fact Extraction
-(FLAN-T5 + LoRA)
-      │
-      ▼
-Extracted Facts
-      │
-      ▼
-Evaluation
-(Precision / Recall / F1)
+pipeline/
+├── README.md
+├── .gitignore
+├── requirements.txt
+├── <fact-extraction-script>.py
+├── <supporting-modules-or-files>
+└── <generated-output-files, if tracked>
 ```
 
-### Pipeline Components
+Replace the placeholder filenames above with the actual filenames present in the repository. Generated meeting outputs and private configuration files should generally not be committed unless the project specifically requires them.
 
-| Component | File | Purpose |
-|---|---|---|
-| Audio extraction | `audio.py` | Extracts audio from meeting video |
-| Transcription | `transcription.py` | Converts speech into text |
-| Speaker diarization | `diarization.py` | Identifies different speaker clusters |
-| Speaker transcript | `speaker_transcript.py` | Combines transcript and speaker information |
-| Fact extraction | `fact_extraction.py` | Extracts important facts from the meeting |
-| Evaluation | `evaluate_model.py` | Evaluates the fact-extraction model |
+## Requirements
 
----
+Before running the pipeline, ensure that you have:
 
-# 2. Requirements
+- Python installed at a version supported by the project dependencies.
+- Access to the BEACON fact-extraction source code.
+- A valid Gemini API key.
+- A meeting transcript in the format expected by the extraction script.
+- The required Python packages installed.
 
-## Hardware
+## Setup
 
-The pipeline is designed to run with GPU acceleration.
+### 1. Clone the repository
 
-Recommended:
+Clone the BEACON repository and switch to the fact-extraction branch:
 
-- NVIDIA GPU
-- CUDA-compatible PyTorch installation
-- At least 8 GB system RAM
-- Sufficient disk space for Whisper and pyannote models
-
-The development environment was tested using an NVIDIA RTX 3050 Laptop GPU.
-
-CPU execution may work for some components but will be considerably slower.
-
----
-
-# 3. Software Requirements
-
-Install:
-
-- Python 3.12+
-- Git
-- FFmpeg
-- NVIDIA GPU drivers
-- CUDA-compatible PyTorch
-
-The project was developed and tested on Windows.
-
----
-
-# 4. Clone the Repository
-
-Clone the BEACON repository:
-
-```powershell
-git clone https://github.com/Major-Project-Beacon/Beacon.git
-```
-
-Move into the repository:
-
-```powershell
-cd Beacon
-```
-
-Switch to the fact-extraction branch:
-
-```powershell
+```bash
+git clone <BEACON_REPOSITORY_URL>
+cd <BEACON_REPOSITORY_FOLDER>
 git switch fact-extraction-module
 ```
 
-The pipeline is located at:
+If you already have the repository locally, navigate to its root and switch to the branch.
 
-```text
-Beacon/
-└── pipeline/
-```
+### 2. Navigate to the pipeline directory
 
----
-
-# 5. Create a Python Environment
-
-It is recommended to use a dedicated virtual environment.
-
-Example:
-
-```powershell
-python -m venv whisper_env
-```
-
-Activate it:
-
-```powershell
-.\whisper_env\Scripts\Activate.ps1
-```
-
-On successful activation, the terminal should show something similar to:
-
-```text
-(whisper_env) PS D:\...\Beacon>
-```
-
----
-
-# 6. Install Dependencies
-
-From the `pipeline` directory:
-
-```powershell
+```bash
 cd pipeline
 ```
 
-Install the Python dependencies:
+### 3. Install dependencies
+
+Install the packages listed in the pipeline's dependency file:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+If the project uses a different dependency file or environment setup, follow that configuration instead.
+
+### 4. Configure the API key
+
+Provide your Gemini API key through the configuration mechanism expected by the extraction script.
+
+If the script reads an environment variable, configure it in your local environment or in a local `.env` file. For example, if the script expects `GEMINI_API_KEY`:
+
+**PowerShell:**
 
 ```powershell
-pip install -r requirements.txt
+$env:GEMINI_API_KEY = "YOUR_API_KEY"
 ```
 
-The main dependencies include:
+Confirm the actual variable name in the script before using this example. Never commit real API keys, credentials, or private `.env` files to GitHub.
 
-```text
-faster-whisper
-pyannote.audio
-torch
-transformers
-peft
-python-dotenv
+## Running the Pipeline
+
+Run the fact-extraction script from the directory and with the arguments expected by its implementation.
+
+Example command pattern:
+
+```bash
+python <fact-extraction-script>.py
 ```
 
----
+Replace the placeholder with the actual script filename. If the script accepts a transcript path, model setting, or output path as command-line arguments, provide those according to its help text or source code.
 
-# 7. Install FFmpeg
+### Input
 
-FFmpeg is required for audio extraction.
+The pipeline expects a meeting transcript. The transcript may contain speaker labels and timestamps if they are available in the source.
 
-Verify that FFmpeg is available:
+The input path and supported transcript format are determined by the script configuration.
 
-```powershell
-ffmpeg -version
-```
+### Output
 
-If the command is not recognized, install FFmpeg and add its `bin` directory to the system PATH.
+The pipeline produces structured JSON containing the extracted meeting information.
+
+The output location and filename are determined by the script configuration. Inspect the generated JSON to confirm:
+
+- It is valid JSON.
+- Its fields match the expected schema.
+- Extracted facts are supported by the transcript.
+- Evidence excerpts accurately reflect the source.
+- Unknown or unstated information is not presented as certain.
+
+## Reliability and Evidence Grounding
+
+Fact extraction from meeting transcripts can be affected by transcription errors, incomplete speaker labels, ambiguous statements, or unclear decisions.
+
+The pipeline should therefore:
+
+- Use the transcript as the source of truth for extraction.
+- Preserve uncertainty when a statement is ambiguous.
+- Avoid inventing names, dates, owners, or decision statuses.
+- Distinguish proposals from confirmed decisions.
+- Include supporting transcript evidence where the output schema requires it.
+- Validate the generated JSON before passing it to another module.
+
+A valid JSON response does not automatically mean that every extracted fact is correct. Outputs should be reviewed against the transcript when accuracy is important.
+
+## Error Handling and Troubleshooting
+
+| Issue | Suggested check |
+|---|---|
+| API authentication failure | Verify that the API key is configured correctly and has access to the selected model |
+| Missing Python package | Install the dependencies listed in `requirements.txt` |
+| Transcript file not found | Check the configured input path and filename |
+| Invalid JSON output | Inspect the model response and the script's parsing and validation logic |
+| Empty or incomplete extraction | Check transcript quality, prompt instructions, model response, and any length limits |
+| API rate limit or temporary failure | Check the API response and the script's retry handling |
+| Incorrect or unsupported facts | Compare the extracted facts and evidence with the original transcript |
+
+## GitHub Collaboration
+
+The pipeline is maintained in the BEACON repository on the `fact-extraction-module` branch.
+
+To update the pipeline:
+
+1. Make changes to the pipeline files.
+2. Review the changes and confirm that no credentials or private data are included.
+3. Commit the intended pipeline changes.
+4. Push the commit to the fact-extraction branch.
 
 Example:
 
-```text
-C:\ffmpeg\bin
+```bash
+git switch fact-extraction-module
+git pull origin fact-extraction-module
+git add pipeline/
+git commit -m "Update BEACON fact extraction pipeline"
+git push origin fact-extraction-module
 ```
 
-After modifying PATH, restart the terminal and run:
+Git tracks individual files inside the folder. Adding, modifying, or removing files in `pipeline/` will be reflected in the commit.
 
-```powershell
-ffmpeg -version
-```
-
-again.
-
----
-
-# 8. Hugging Face Authentication
-
-Speaker diarization uses the pyannote speaker-diarization model.
-
-Each developer should use **their own Hugging Face token**.
-
-Do not share personal Hugging Face tokens with other team members.
-
-## Create `.env`
-
-Inside:
-
-```text
-pipeline/
-```
-
-create:
-
-```text
-.env
-```
-
-Add:
-
-```text
-HF_TOKEN=your_huggingface_token
-```
-
-Example:
-
-```text
-HF_TOKEN=hf_xxxxxxxxxxxxxxxxxxxxxxxxx
-```
-
-Do not commit this file.
-
-The repository contains:
-
-```text
-.env.example
-```
-
-instead.
-
-Copy `.env.example` to `.env` and replace the placeholder with your own token.
-
----
-
-# 9. Hugging Face Model Access
-
-The Hugging Face account used for the token must have access to the pyannote diarization model used by the pipeline.
-
-The diarization script uses:
-
-```text
-pyannote/speaker-diarization-community-1
-```
-
-If Hugging Face requests model access or authentication, complete the required steps using your own Hugging Face account.
-
----
-
-# 10. Model Setup
-
-The fact-extraction pipeline uses:
-
-```text
-google/flan-t5-base
-```
-
-with the BEACON V2.1 LoRA adapter.
-
-The trained adapter is **not included in this repository**.
-
-The adapter used during development was stored locally at:
-
-```text
-D:\BEACON\models\beacon_flan_t5_v2_1_refined_lora
-```
-
-The adapter must be available locally before running:
-
-```text
-fact_extraction.py
-```
-
-and:
-
-```text
-evaluate_model.py
-```
-
-### Important
-
-The current scripts contain a local model path.
-
-If the model is stored elsewhere, update:
-
-```python
-ADAPTER_PATH
-```
-
-in:
-
-```text
-fact_extraction.py
-```
-
-and:
-
-```text
-evaluate_model.py
-```
-
-to point to the local BEACON V2.1 adapter.
-
-Do not commit private model files or large model checkpoints to this repository unless the team explicitly decides to use Git LFS or another model-storage solution.
-
----
-
-# 11. Input Meeting Video
-
-The first pipeline component requires a meeting video.
-
-The video can be any supported video format that FFmpeg can read.
-
-Examples:
-
-```text
-.mp4
-.mkv
-.mov
-.avi
-```
-
-Place the video somewhere accessible on your local machine.
-
-Before running the pipeline, update the input video path in:
-
-```text
-audio.py
-```
-
----
-
-# 12. Running the Pipeline
-
-The components should be executed in the following order.
-
-## Step 1: Extract Audio
-
-Run:
-
-```powershell
-python audio.py
-```
-
-This extracts the meeting audio as:
-
-```text
-16 kHz
-Mono
-PCM WAV
-```
-
-The output is written to the pipeline output directory.
-
-Expected structure:
-
-```text
-pipeline/
-└── output/
-    └── <meeting>.wav
-```
-
----
-
-# 13. Step 2: Transcription
-
-Update the audio path in:
-
-```text
-transcription.py
-```
-
-Then run:
-
-```powershell
-python transcription.py
-```
-
-The script uses **Faster-Whisper** to generate the meeting transcript.
-
-The output contains timestamped transcript segments.
-
-Example:
-
-```text
-[12.40 - 15.80] We should prioritize the performance issue.
-[15.90 - 18.20] I agree with that.
-```
-
-Output:
-
-```text
-pipeline/output/transcript.txt
-```
-
----
-
-# 14. Step 3: Speaker Diarization
-
-Make sure your `.env` contains:
-
-```text
-HF_TOKEN=your_token
-```
-
-Then run:
-
-```powershell
-python diarization.py
-```
-
-The script uses:
-
-```text
-pyannote/speaker-diarization-community-1
-```
-
-to identify speaker clusters.
-
-Example output:
-
-```text
-[12.40 - 15.80] SPEAKER_02
-[15.90 - 18.20] SPEAKER_05
-```
-
-The labels such as `SPEAKER_02` and `SPEAKER_05` represent diarization clusters. They are not actual person names.
-
-Output:
-
-```text
-pipeline/output/diarization.txt
-```
-
----
-
-# 15. Step 4: Create Speaker-Labelled Transcript
-
-Run:
-
-```powershell
-python speaker_transcript.py
-```
-
-This combines:
-
-```text
-transcript.txt
-```
-
-and:
-
-```text
-diarization.txt
-```
-
-using timestamp overlap.
-
-The resulting output contains:
-
-```text
-Timestamp
-Speaker
-Transcript
-```
-
-Example:
-
-```text
-[12.40 - 15.80] SPEAKER_02: We should prioritize the performance issue.
-[15.90 - 18.20] SPEAKER_05: I agree with that.
-```
-
-Output:
-
-```text
-pipeline/output/speaker_transcript.txt
-```
-
-This is the primary input to the BEACON fact-extraction stage.
-
----
-
-# 16. Step 5: Fact Extraction
-
-Make sure the BEACON V2.1 adapter path is correctly configured in:
-
-```text
-fact_extraction.py
-```
-
-Then run:
-
-```powershell
-python fact_extraction.py
-```
-
-The model analyzes the speaker-labelled meeting transcript and extracts important factual information.
-
-The extraction focuses on information such as:
-
-- decisions
-- requirements
-- commitments
-- deadlines
-- restrictions
-- permissions
-- financial conditions
-- risks
-- security
-- performance
-- availability
-- responsibilities
-- important actions
-
-The model also attempts to ignore:
-
-- greetings
-- casual conversation
-- irrelevant discussion
-- repeated information
-- unsupported statements
-
-Output:
-
-```text
-pipeline/output/facts.json
-```
-
-Each extracted fact contains information linking it back to the original meeting context.
-
----
-
-# 17. Step 6: Model Evaluation
-
-The fact-extraction model can be evaluated against the BEACON test dataset.
-
-Make sure:
-
-1. The BEACON V2.1 adapter is available.
-2. The test dataset is available locally.
-3. The `TEST_FILE` path in `evaluate_model.py` points to the test dataset.
-
-Then run:
-
-```powershell
-python evaluate_model.py
-```
-
-The evaluation reports:
-
-```text
-Precision
-Recall
-F1 Score
-Exact Match
-Numeric Preservation
-No Extra Numbers
-```
-
-Example output format:
-
-```text
-=======================================================
-BEACON V2.1 EVALUATION
-=======================================================
-Test records          : 60
-Precision             : XX.XX%
-Recall                : XX.XX%
-F1 Score              : XX.XX%
-Exact Match           : XX.XX%
-Numeric Preservation  : XX.XX%
-No Extra Numbers      : XX.XX%
-=======================================================
-```
-
-Detailed results are saved to:
-
-```text
-pipeline/output/evaluation/v2_1_evaluation.json
-```
-
----
-
-# 18. Complete Execution Order
-
-For a new meeting, execute:
-
-```powershell
-python audio.py
-python transcription.py
-python diarization.py
-python speaker_transcript.py
-python fact_extraction.py
-```
-
-The complete flow is:
-
-```text
-Video
-  ↓
-audio.py
-  ↓
-Audio WAV
-  ↓
-transcription.py
-  ↓
-transcript.txt
-  ↓
-diarization.py
-  ↓
-diarization.txt
-  ↓
-speaker_transcript.py
-  ↓
-speaker_transcript.txt
-  ↓
-fact_extraction.py
-  ↓
-facts.json
-```
-
----
-
-# 19. Output Directory
-
-Generated files are stored under:
-
-```text
-pipeline/output/
-```
-
-Typical output:
-
-```text
-output/
-├── <meeting>.wav
-├── transcript.txt
-├── diarization.txt
-├── speaker_transcript.txt
-├── facts.json
-└── evaluation/
-    └── v2_1_evaluation.json
-```
-
-The `output/` directory is excluded from Git.
-
----
-
-# 20. Security
-
-Never commit:
-
-```text
-.env
-```
-
-Never commit:
-
-```text
-HF_TOKEN
-```
-
-Never place an actual Hugging Face token inside Python source code.
-
-Never share a personal Hugging Face token with teammates.
-
-Each team member should create their own:
-
-```text
-pipeline/.env
-```
-
-using:
-
-```text
-HF_TOKEN=<their own token>
-```
-
-The repository only contains:
-
-```text
-.env.example
-```
-
----
-
-# 21. Git Files
-
-The pipeline intentionally excludes:
-
-```text
-.env
-output/
-__pycache__/
-*.pyc
-```
-
-These rules are defined in:
-
-```text
-pipeline/.gitignore
-```
+## Security
 
-The repository contains:
+- Keep API keys and credentials outside tracked source files.
+- Do not commit `.env` files containing secrets.
+- Use `.gitignore` to exclude local configuration and generated files that should not be tracked.
+- If a secret is accidentally pushed, revoke or rotate it. Removing it in a later commit does not erase it from the repository's history.
 
-```text
-.env.example
-```
-
-so teammates know which environment variables are required.
-
----
-
-# 22. Troubleshooting
-
-## `HF_TOKEN environment variable is not set`
-
-Check that:
-
-```text
-pipeline/.env
-```
-
-exists and contains:
-
-```text
-HF_TOKEN=your_token
-```
-
-Make sure there are no accidental spaces or incorrect filenames such as:
-
-```text
-.env.txt
-```
-
-## `ffmpeg is not recognized`
-
-Verify:
-
-```powershell
-ffmpeg -version
-```
-
-If it fails, install FFmpeg and add its `bin` directory to PATH.
-
-## CUDA is not available
-
-Check:
-
-```powershell
-python -c "import torch; print(torch.cuda.is_available())"
-```
-
-Expected:
-
-```text
-True
-```
-
-If it returns `False`, verify:
-
-- NVIDIA drivers
-- PyTorch CUDA installation
-- Python environment
-- GPU availability
-
-## Model adapter cannot be found
-
-Check the path configured in:
-
-```text
-fact_extraction.py
-```
-
-and:
-
-```text
-evaluate_model.py
-```
-
-The path must point to the local BEACON V2.1 adapter.
-
-## `faster_whisper` cannot be imported
+## Current Scope
 
-Make sure the correct virtual environment is activated:
+This module focuses on extracting structured facts from meeting transcripts. It is one component of BEACON and is intended to provide machine-readable information for subsequent processing.
 
-```powershell
-.\whisper_env\Scripts\Activate.ps1
-```
-
-Then:
-
-```powershell
-pip install -r pipeline/requirements.txt
-```
-
----
-
-# 23. Development Notes
-
-### Speech-to-Text
-
-```text
-Faster-Whisper
-```
-
-### Speaker Diarization
-
-```text
-pyannote/speaker-diarization-community-1
-```
-
-### Fact Extraction
-
-```text
-google/flan-t5-base
-+
-BEACON V2.1 LoRA adapter
-```
-
-### Evaluation
-
-```text
-Precision
-Recall
-F1
-Exact Match
-Numeric Preservation
-```
-
----
+The exact extraction categories, schema, model configuration, and integration behavior may evolve as the BEACON pipeline develops.
 
-# 24. Current Scope
+## Contributors
 
-This module is responsible for the **speech-processing and meeting fact-extraction side of BEACON**.
+Maintained by the BEACON project team.
 
-Current scope:
-
-```text
-Video
-→ Audio
-→ Transcription
-→ Speaker Diarization
-→ Speaker-Labelled Transcript
-→ Fact Extraction
-→ Evaluation
-```
-
-Downstream compliance analysis and contract-related processing are separate modules.
-
----
-
-# 25. Contributor Guidelines
-
-Before modifying the pipeline:
-
-1. Create or switch to your feature branch.
-2. Do not commit `.env`.
-3. Do not commit generated meeting outputs.
-4. Do not commit large model checkpoints unless explicitly approved.
-5. Test the complete pipeline after modifying a component.
-6. Keep the existing output format compatible with downstream modules.
-7. Document major changes in the commit message.
-
----
-
-# 26. Pipeline Status
-
-The following components have been implemented and tested:
-
-- [x] Audio extraction
-- [x] Speech-to-text
-- [x] Speaker diarization
-- [x] Speaker-labelled transcript
-- [x] BEACON fact extraction
-- [x] Model evaluation
-- [x] Environment-based Hugging Face authentication
-- [x] Git-safe secret handling
-
----
-
-## Repository
-
-BEACON is maintained by the project team under the GitHub organization:
-
-```text
-Major-Project-Beacon
-```
-
-Pipeline branch:
-
-```text
-fact-extraction-module
-```
+For project-specific questions, consult the source code, dependency file, and documentation in this branch.

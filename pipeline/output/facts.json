@@ -1,0 +1,105 @@
+{
+  "executive_summary": "The meeting covered various internal operations, including reminders on upcoming book club participation, customer interview goals, and engagement surveys. Key discussions focused on improving the release kickoff format due to time constraints, implementing dual-track agile processes, and the importance of performance and scalability in the product lifecycle. The group addressed recent outages on gitlab.com and agreed on the necessity of proactive performance monitoring and clear definitions of done.",
+  "meeting_metadata": {
+    "title": "null",
+    "date": "null",
+    "language": "English"
+  },
+  "key_points": [
+    {
+      "point": "A book club meeting is scheduled for August 7th.",
+      "speaker": "SPEAKER_08",
+      "timestamp": "28.02 - 33.02",
+      "evidence": "We have a book club coming up on inspired in four weeks on August 7th."
+    },
+    {
+      "point": "Engagement surveys will be sent monthly in Q3.",
+      "speaker": "SPEAKER_08",
+      "timestamp": "100.90 - 104.90",
+      "evidence": "I'm going to run this once a month. In Q3."
+    },
+    {
+      "point": "The goal is to conduct at least three customer interviews per PM before Q2.",
+      "speaker": "SPEAKER_08",
+      "timestamp": "191.55 - 205.55",
+      "evidence": "we have a goal of at least three customer interviews per PM. ... remember we have three weeks until Q2 to hit our goal."
+    },
+    {
+      "point": "New PMs were hired: Gabe Weaver to lead a third group in the manage area, and Dove Hershkovits as APM for monitoring.",
+      "speaker": "SPEAKER_08",
+      "timestamp": "283.22 - 313.57",
+      "evidence": "Uh, we hired Gabe Weaver. ... we're going to have a third group. In the manage area. And Gabe will lead that. And then dove Hershkovits. We just hired him. As the APM monitoring."
+    },
+    {
+      "point": "Recent outages on gitlab.com affected revenue and require more proactive performance and scalability focus.",
+      "speaker": "SPEAKER_02",
+      "timestamp": "1576.80 - 1597.80",
+      "evidence": "We've over the past month, we've had a significant number of outages related to dot com and that affected at least one customer revenue potential."
+    }
+  ],
+  "decisions": [
+    {
+      "decision": "Adopt a 'planned priority' label instead of 'promise' to manage feature expectations.",
+      "status": "approved",
+      "speaker": "SPEAKER_05",
+      "timestamp": "2513.62 - 2532.62",
+      "evidence": "I just went through a renamed promise label to playing priority. General meaning is large in the same although we shouldn't be promising features and so this is just a way to flag it."
+    }
+  ],
+  "action_items": [
+    {
+      "task": "Resend engagement survey to Fabian and Karina.",
+      "owner": "Jessica",
+      "deadline": "null",
+      "status": "assigned",
+      "speaker": "SPEAKER_08",
+      "timestamp": "136.90 - 162.90",
+      "evidence": "I'll ask Jessica to re send that to you. ... So I'll ask Jessica to send it to Fabian and Karina."
+    },
+    {
+      "task": "Update or confirm the accuracy of the category maturity flow chart.",
+      "owner": "null",
+      "deadline": "null",
+      "status": "assigned",
+      "speaker": "SPEAKER_08",
+      "timestamp": "233.90 - 240.30",
+      "evidence": "please go in and either confirm that it's accurate or update it."
+    },
+    {
+      "task": "Create an issue to discuss and evaluate alternatives to the release kickoff format.",
+      "owner": "null",
+      "deadline": "prior to next release kickoff",
+      "status": "assigned",
+      "speaker": "SPEAKER_03",
+      "timestamp": "1098.34 - 1102.34",
+      "evidence": "we should discuss it in an issue and come up with something I do think prior to next release kickoff."
+    }
+  ],
+  "commitments": [],
+  "dates_and_deadlines": [
+    {
+      "date_or_deadline": "August 7th",
+      "event": "Book club meeting",
+      "source_timestamp": "32.02 - 33.02"
+    },
+    {
+      "date_or_deadline": "Three weeks from meeting",
+      "event": "Deadline to hit customer interview goal before Q2",
+      "source_timestamp": "205.55 - 206.55"
+    }
+  ],
+  "problems_and_risks": [
+    {
+      "issue": "Release kickoff meetings have become too long due to the increasing number of speakers.",
+      "speaker": "SPEAKER_08",
+      "timestamp": "929.86 - 947.11",
+      "evidence": "Uh, 3D we went long. ... but we're going to have to limit the number of items."
+    },
+    {
+      "issue": "Inconsistency in dogfooding and lack of clarity on how to scale new features for gitlab.com.",
+      "speaker": "SPEAKER_00",
+      "timestamp": "1947.88 - 2122.88",
+      "evidence": "the approach and process moving forward to dog food in the right spots is not clear to me or what the best practices have been or if anybody's, you know, crack that."
+    }
+  ]
+}

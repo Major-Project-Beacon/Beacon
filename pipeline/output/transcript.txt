@@ -1,0 +1,708 @@
+[0.00 - 7.00] If it's like my family, I definitely have no subjects.
+[7.00 - 8.00] Hey Daniel.
+[8.00 - 9.00] Hey, Eric.
+[9.00 - 10.00] Hello.
+[10.00 - 11.00] Welcome.
+[11.00 - 12.00] Welcome back, Eric.
+[12.00 - 13.00] Thanks so much.
+[13.00 - 14.00] Yeah.
+[14.00 - 15.00] It's great to be here.
+[15.00 - 18.02] Hi, Virginia.
+[18.02 - 19.02] No.
+[19.02 - 20.02] All right.
+[20.02 - 24.02] Let's, let's kick off.
+[24.02 - 28.02] I wanted to start out with some reminders.
+[28.02 - 32.02] We have a book club coming up on inspired in four weeks on August
+[32.02 - 33.02] 7th.
+[33.02 - 37.02] I just reread it myself. It's a, it's a good read.
+[37.02 - 41.02] It's highly aligned with how I think about product management and
+[41.02 - 45.02] does a good job of explaining why some of these things are
+[45.02 - 46.02] important.
+[46.02 - 49.02] That, that I also believe to be important.
+[49.02 - 53.02] So it's nice to have another voice explaining all of that.
+[53.02 - 54.02] So please do read that.
+[54.02 - 57.02] I think I'm going to update the new hire.
+[57.02 - 61.02] Onboarding doc and ask all new hires to read this as well.
+[61.02 - 63.02] So that we all.
+[63.02 - 67.02] Everybody in the team is on the same page with respect to this book.
+[67.02 - 71.90] Let's see.
+[71.90 - 73.90] Reminder B.
+[73.90 - 77.90] Remember, there's this interview spreadsheet CS and sales have.
+[77.90 - 82.90] Populated that with a number of customer contacts for meetings.
+[82.90 - 84.90] Please do follow up on that.
+[84.90 - 88.90] If you want to ensure goodwill with that team and.
+[88.90 - 93.90] Follow up promptly with meetings with these customers so that.
+[93.90 - 97.90] That team can see that we're taking advantage of it.
+[97.90 - 100.90] Third reminder, we've got a little engagement survey.
+[100.90 - 102.90] I'm going to run this once a month.
+[102.90 - 104.90] In Q3.
+[104.90 - 107.90] Just to take a pulse, given all the change going on, please do take a
+[107.90 - 111.90] minute to fill it out. It's five.
+[111.90 - 112.90] Okay.
+[112.90 - 116.90] So I'm going to give you some quick questions and then one free form
+[116.90 - 119.90] where you can share whatever feedback you have.
+[119.90 - 122.90] Fabia didn't receive it.
+[122.90 - 124.90] I'm pretty sure I went through my emails.
+[124.90 - 128.90] Maybe it's on my end, but I'm happy to fill it out.
+[128.90 - 130.90] You didn't get it.
+[130.90 - 133.90] Need to get it to you. All right. I will.
+[133.90 - 136.90] I'll ask Jessica to re send that to you.
+[136.90 - 140.90] Anybody else in the same condition where you did not receive it.
+[140.90 - 142.90] I don't know.
+[142.90 - 146.90] But is there a way to put the link to the survey in the agenda?
+[146.90 - 149.90] Well, it's, it's personal. It's, uh,
+[149.90 - 152.90] it's tied back to your user ID so we can track, uh,
+[152.90 - 155.90] which team you're on and that kind of thing. I do believe it's anonymous,
+[155.90 - 158.90] but nevertheless, everyone has their own custom ID.
+[158.90 - 162.90] So I'll ask Jessica to send it to Fabian and Karina.
+[162.90 - 163.90] Anybody else?
+[163.90 - 165.90] I just, I hadn't seen it.
+[165.90 - 167.90] But I searched my email real quick.
+[167.90 - 169.90] And it looks like that's the title of the email.
+[169.90 - 171.90] So if you just search for that in your, in your Gmail,
+[171.90 - 174.90] you should be able to find it if you got it.
+[174.90 - 176.90] Poll survey.
+[176.90 - 178.90] Okay.
+[178.90 - 181.90] If anybody else didn't get it, please ping me.
+[181.90 - 187.55] All right.
+[187.55 - 191.55] Uh, next reminder, we, uh, we need,
+[191.55 - 195.55] we have a goal of at least three customer interviews per PM.
+[195.55 - 198.55] There's an okay, our issue out there.
+[198.55 - 201.55] If you haven't updated it lately, please do so.
+[201.55 - 205.55] And, uh, remember we have three weeks until Q2 to hit our goal.
+[205.55 - 206.55] So please, uh,
+[206.55 - 210.55] please do invest the time to get those set up and get at least three done.
+[210.55 - 211.55] If you haven't already.
+[211.55 - 216.90] Uh, next one category maturity page. Last week we talked about this.
+[216.90 - 220.90] Josh did a great job of creating some new views.
+[220.90 - 221.90] Uh,
+[221.90 - 225.90] one of which is sort of this flow chart showing how mature we're going to be
+[225.90 - 226.90] at a given point in time,
+[226.90 - 229.90] which raised questions about whether, uh,
+[229.90 - 233.90] we were forecasting that accurately. If you haven't already,
+[233.90 - 240.30] please go in and either confirm that it's accurate or update it.
+[240.30 - 245.30] Thanks to Kenny for creating that issue.
+[245.30 - 248.30] Uh, somebody added direction maturity page.
+[248.30 - 252.22] You want to talk about that?
+[252.22 - 254.22] But it was just me, just your, your reference.
+[254.22 - 255.22] I was adding the link there.
+[255.22 - 260.22] It's a good way you can get a sense for like, you know,
+[260.22 - 262.22] it's hard. It's hard when it's in tabular form,
+[262.22 - 263.22] but when it's charted,
+[263.22 - 266.22] it's much easier to see like if it's achievable or not,
+[266.22 - 268.22] uh, based on some of the trends.
+[268.22 - 270.22] Um, and there's also if you scroll down, uh,
+[270.22 - 271.22] stage level trends as well.
+[271.22 - 273.22] So you can see how your stage.
+[273.22 - 277.22] In particular is trending or set to be trending. So.
+[277.22 - 278.22] Great. Thanks, Josh.
+[278.22 - 281.22] All right. Some team updates. We hired a couple more PMs.
+[281.22 - 283.22] We got a good rhythm going on hiring.
+[283.22 - 286.57] Uh, we hired Gabe Weaver.
+[286.57 - 288.57] He originally came through the growth funnel.
+[288.57 - 292.57] Uh, but we have a really strong candidate for that fourth slot.
+[292.57 - 296.57] So we're going to target Gabe for a third managed PM.
+[296.57 - 300.57] The charter of that team is to be defined, but, uh,
+[300.57 - 302.57] bottom line, we're going to have a third group.
+[302.57 - 304.57] We're going to have a third group.
+[304.57 - 306.57] In the manage area.
+[306.57 - 307.57] And Gabe will lead that.
+[307.57 - 309.57] And then dove Hershkovits.
+[309.57 - 311.57] We just hired him.
+[311.57 - 313.57] As the APM monitoring.
+[313.57 - 315.57] He's got a great background in monitoring.
+[315.57 - 318.57] And it's most recently been at elastic.
+[318.57 - 321.57] So thank you to everyone who's been involved in the hiring loop.
+[321.57 - 327.65] I know it's taking a lot of energy from everybody, but, uh,
+[327.65 - 328.65] I think our.
+[329.65 - 334.65] Hiring processes continues to pick up speed.
+[334.65 - 339.65] Uh, B to B.
+[339.65 - 340.65] I worked with.
+[340.65 - 343.65] With Christie and David Sakamoto.
+[343.65 - 346.65] To change some language around customer results.
+[346.65 - 348.65] Just wanted to make sure you all saw that.
+[348.65 - 351.65] Uh, so there's the MR.
+[351.65 - 352.65] It's got on that one.
+[352.65 - 353.65] I just.
+[353.65 - 357.65] Uh, there's a diff highlights of what is new content, I believe,
+[357.65 - 359.65] and there's one section that is great.
+[359.65 - 362.65] I can totally understand why we would add that about prioritized
+[362.65 - 363.65] ruthlessly.
+[363.65 - 364.65] But then the rest is.
+[364.65 - 366.65] I guess a bunch of formatting changes.
+[366.65 - 368.65] And I don't know if there's new content.
+[368.65 - 369.65] In any of the dog food.
+[369.65 - 370.65] I guess.
+[370.65 - 372.65] Is the TLDR, the addition of that.
+[372.65 - 373.65] Prioritized ruthlessly.
+[373.65 - 374.65] Or is there some other.
+[374.65 - 382.65] Uh,
+[382.65 - 383.65] I don't know.
+[383.65 - 384.65] I don't know.
+[384.65 - 385.65] I don't know.
+[385.65 - 386.65] Uh,
+[386.65 - 388.65] Point we were trying to make in this change.
+[388.65 - 390.65] Oh, it's been a little while. I think, uh,
+[390.65 - 397.65] There were a number of changes.
+[397.65 - 400.65] But before the handbook basically read that internal feedback is
+[400.65 - 403.65] worth 10 times more than X turtle feedback.
+[403.65 - 404.65] And I understand.
+[404.65 - 407.65] Why we want internal feedback because of dog food.
+[407.65 - 411.65] And using our own product. It's, it's a, it's a great channel for
+[411.65 - 413.65] us to be able to, you know,
+[413.65 - 416.65] to be able to use it as internal opinion.
+[416.65 - 419.65] And both Christie and I want to.
+[419.65 - 420.65] Move off of that position.
+[420.65 - 425.65] Like we should be customer first.
+[425.65 - 429.65] And treat our own teams as a customer.
+[429.65 - 432.65] But let's, I don't, I don't want people to interpret that our own
+[432.65 - 435.65] internal opinion is worth 10 times more than a customer's opinion.
+[435.65 - 436.65] If that makes sense.
+[436.65 - 440.54] So it was mostly language,
+[440.54 - 442.54] but I don't think it's worth it.
+[442.54 - 443.54] I don't think it's worth it.
+[443.54 - 444.54] Yeah.
+[444.54 - 447.54] One comment that I had on this is that some of the text seems like
+[447.54 - 450.54] we should focus on core competencies as opposed to a new scope.
+[450.54 - 451.54] And.
+[451.54 - 454.54] Like as in the, we should focus on what we're best at.
+[454.54 - 455.54] Um, so I'm not.
+[455.54 - 457.54] Anyways, that's one thought I had on this.
+[457.54 - 458.54] But.
+[458.54 - 462.54] I don't remember that being the point of it. Maybe it reads that
+[462.54 - 465.54] way. I don't know. Feel free to continue to suggest tweaks.
+[465.54 - 469.54] The point was.
+[469.54 - 470.54] Yeah.
+[470.54 - 471.54] Yeah.
+[471.54 - 474.54] I don't know if this is a follow up issue in.
+[474.54 - 477.54] The way you described it, it doesn't seem controversial,
+[477.54 - 480.54] but I will say there was a big discussion and a recent initiative.
+[480.54 - 481.54] Uh, you know,
+[481.54 - 483.54] from Sid and other leaders that we should heavily prioritize dog
+[483.54 - 484.54] fruiting.
+[484.54 - 486.88] Because.
+[486.88 - 487.88] Yeah.
+[487.88 - 489.88] I don't know if this is a follow up issue.
+[489.88 - 491.88] I don't know if this is a follow up issue.
+[491.88 - 494.88] And the way you described it, it doesn't seem controversial,
+[494.88 - 497.88] but I will say there was a big discussion and a recent initiative.
+[497.88 - 500.88] Um,
+[500.88 - 503.88] and I think it's important for the leaders that we should heavily
+[503.88 - 505.88] prioritize dog fruiting because there are parts,
+[505.88 - 507.88] there are teams within the company that we're not.
+[507.88 - 508.88] Um,
+[508.88 - 509.88] Utilizing our features.
+[509.88 - 512.88] And we wanted to make sure that the product team was responsive to
+[512.88 - 513.88] request from them.
+[513.88 - 514.88] Yep.
+[514.88 - 517.88] It's a little bit different than saying it's about our internal
+[517.88 - 519.88] opinion. Like that we should, we had always said we should validate
+[519.88 - 520.88] it.
+[520.88 - 523.88] So that clarification is good that we want to make sure it's about
+[523.88 - 525.88] us saying this is in line with where we want to take the product
+[525.88 - 526.88] from.
+[526.88 - 528.88] So we're not saying that we should emphasize it.
+[528.88 - 529.88] Um,
+[529.88 - 532.88] I just want to, like, if the intent was to make sure we,
+[532.88 - 534.88] we're just clarifying that same position.
+[534.88 - 537.88] But if we're saying actually we should kind of pull back from the
+[537.88 - 538.88] push for more dog footing.
+[538.88 - 539.88] No.
+[539.88 - 540.88] I would.
+[540.88 - 542.88] Please don't conflate the two.
+[542.88 - 543.88] Okay.
+[543.88 - 545.88] We very much still want to dog food.
+[545.88 - 547.88] I think the point is.
+[547.88 - 550.88] When you're thinking of customers for your thing.
+[550.88 - 552.88] Think of our internal teams.
+[552.88 - 553.88] Early.
+[553.88 - 554.88] Like.
+[554.88 - 556.88] You can get great feedback from them.
+[556.88 - 559.88] They have an incentive to work with you.
+[559.88 - 560.88] Uh,
+[560.88 - 563.88] There's very little risk in rolling out things early to them.
+[563.88 - 567.88] So treat them like a customer and think of our internal teams early
+[567.88 - 569.88] as you're rolling something out.
+[569.88 - 571.88] That's still very much the message.
+[571.88 - 572.88] Uh,
+[572.88 - 573.88] But.
+[573.88 - 577.88] Let's not over rotate on internal feedback or internal opinion.
+[577.88 - 579.88] Let's still seek external feedback too.
+[579.88 - 582.88] Cause that's just one customer of many.
+[582.88 - 583.88] Cool.
+[583.88 - 584.88] Makes sense.
+[584.88 - 585.88] Okay.
+[585.88 - 586.88] Does.
+[586.88 - 587.88] All right.
+[587.88 - 591.88] To see customer training, discovery training coming soon.
+[591.88 - 595.88] Uh, Sarah O'Donnell and her team are going to do a bunch of sort of
+[595.88 - 598.88] quick videos on a variety of customer discovery topics.
+[598.88 - 599.88] I was super excited for that.
+[599.88 - 600.88] They should start.
+[601.88 - 603.88] Any day now, I think starting this week.
+[603.88 - 605.88] And so we'll, uh,
+[605.88 - 607.88] We'll release those to you as they come out.
+[607.88 - 609.88] We'll embed them.
+[609.88 - 611.88] In the, uh, how we work.
+[611.88 - 617.25] Description on our team page as well.
+[617.25 - 620.25] All right. Number three, 12, two kickoff feedback.
+[620.25 - 622.25] Josh, thanks for leaving the charge.
+[622.25 - 624.25] I thought you did a good job of.
+[624.25 - 627.55] MCing and sort of.
+[627.55 - 633.55] Adding color commentary, uh, in between.
+[633.55 - 636.55] I thought the screenshots definitely helped.
+[636.55 - 639.55] There were a bunch that did not have them.
+[639.55 - 643.55] Uh, I was wondering why is it just because we're not there yet on
+[643.55 - 644.55] many of these.
+[644.55 - 645.55] Yeah.
+[645.55 - 646.55] Okay.
+[646.55 - 647.55] Yeah.
+[647.55 - 649.55] I mean some of the commentary, I don't know.
+[649.55 - 653.55] Nicole added that. Yeah. Many of the issues.
+[653.55 - 657.55] We're saying we're going to do UX front end and back end.
+[657.55 - 658.55] In the same iteration.
+[658.55 - 660.55] So it hasn't started.
+[660.55 - 662.55] And then some, they're like,
+[662.55 - 665.55] I can think of a number where they're just aren't appropriate
+[665.55 - 667.55] screenshots or at least there weren't screenshots.
+[667.55 - 669.55] Uh, or mockups created in advance.
+[669.55 - 670.55] Okay.
+[670.55 - 672.55] For the purposes of front end working on it.
+[672.55 - 673.55] Cause front end was going to.
+[673.55 - 675.55] Work on it without a mockup.
+[675.55 - 676.55] Okay.
+[676.55 - 678.55] I'd love to get to where we're a bit ahead.
+[678.55 - 680.55] So we'll have more of these earlier.
+[680.55 - 683.55] And hopefully the customer discovery flow will.
+[683.55 - 685.55] We'll get us further ahead on that.
+[685.55 - 689.55] In my case, some of the features also just have no UX component.
+[689.55 - 690.55] Yep.
+[690.55 - 692.55] As a no UI component that could be screen-charted.
+[692.55 - 693.55] It's a.
+[693.55 - 694.55] Understood.
+[694.55 - 695.55] Yeah.
+[695.55 - 696.55] I don't expect everyone.
+[696.55 - 697.55] I mean,
+[697.55 - 699.55] use your judgment if it doesn't need it.
+[699.55 - 700.55] Fine.
+[700.55 - 702.55] But where we do need design,
+[702.55 - 705.55] it'd be great to get at least a.
+[705.55 - 706.55] A month ahead.
+[706.55 - 707.55] So.
+[707.55 - 708.55] As we roll into dev.
+[708.55 - 712.55] We have that to offer them.
+[712.55 - 715.55] Uh, Scott, just a quick question to you.
+[715.55 - 719.55] Um, how do you feel about presenting like balsamic or super low
+[719.55 - 721.55] fi mockups on the kickoff?
+[721.55 - 722.55] Um,
+[722.55 - 723.55] fine with that.
+[723.55 - 724.55] Okay.
+[724.55 - 726.55] Cause that could be an option too.
+[726.55 - 730.55] For PMs that are waiting for UX to work in the same sprint.
+[730.55 - 731.55] Um,
+[731.55 - 733.55] and I know that plans done a pretty good job at, um,
+[733.55 - 736.55] at least in the past of kind of running ahead of UX and saying,
+[736.55 - 737.55] like, Hey,
+[737.55 - 740.55] this is kind of what I think I want this to look like before, um,
+[740.55 - 743.55] spinning UX cycles on, I'm making a more high-fi, uh,
+[743.55 - 744.55] mockup.
+[744.55 - 745.55] So.
+[745.55 - 746.55] Yeah.
+[746.55 - 748.55] If you think it does a better job of describing,
+[749.55 - 752.55] then the issue itself, then use it.
+[752.55 - 755.55] I think, I think in some cases, like a picture can be worth a thousand
+[755.55 - 758.55] words. I mean, no matter how many words you throw at something, it's
+[758.55 - 761.55] like, you know, for example, one of my things that I request,
+[761.55 - 764.55] or I reported on for the release, uh,
+[764.55 - 766.55] the kickoff meeting was, uh, uh,
+[766.55 - 768.55] uh, expanding the Epic view in the roadmap.
+[768.55 - 770.55] And like those are basically just a bunch of buzzwords put together
+[770.55 - 772.55] that you're like, okay, what does that mean?
+[772.55 - 773.55] Expand Epic.
+[774.55 - 776.55] And I'm just, I literally thought on that one for like 20 minutes
+[776.55 - 778.55] saying, how do I make this epic?
+[778.55 - 781.55] How do I make this issue title like more descriptive for customer
+[781.55 - 782.55] value?
+[782.55 - 784.55] And it just came down to like, that is the functionality we're adding.
+[784.55 - 785.55] What does that mean?
+[785.55 - 786.55] Oh, here's the screenshot.
+[786.55 - 788.55] You can see that we're going to add a dropdown.
+[788.55 - 789.55] You can see the issues and children,
+[789.55 - 791.55] epics that are attached to that epic.
+[791.55 - 793.55] Uh, and in that case, like, I was like, I'm so thankful.
+[793.55 - 794.55] I have a screenshot.
+[794.55 - 797.55] Even though that one is actually not a high-fi, uh,
+[797.55 - 799.55] uh, mockup, it's more, it's more,
+[799.55 - 800.55] it's more, it's more,
+[800.55 - 801.55] it was a little bit pieced together.
+[801.55 - 803.55] So, um, yeah, I think like in general,
+[803.55 - 806.55] there's a lot more value if we can show something like that.
+[806.55 - 807.55] Uh, so, you know,
+[807.55 - 810.55] product managers, you can, you can consider that.
+[810.55 - 812.55] Um, you should feel free that you, you know,
+[812.55 - 814.55] you're empowered to take, um,
+[814.55 - 816.55] a tool that you're comfortable with,
+[816.55 - 819.55] even if it might even be just like Google slides and make something.
+[819.55 - 820.55] Um,
+[820.55 - 823.55] that gets you at least a part of the way there in terms of what you
+[823.55 - 824.55] want the experience to look like.
+[824.55 - 825.55] Yep.
+[825.55 - 826.55] So, um,
+[826.55 - 828.55] three C I thought the talk track shifted.
+[828.55 - 830.55] Uh, it was definitely more problem-focused.
+[830.55 - 833.55] I noticed a number of speakers really trying to zero in on that,
+[833.55 - 834.55] which is perfect.
+[834.55 - 837.55] Some of them could have been more problem-focused.
+[837.55 - 838.55] I thought.
+[838.55 - 839.55] So just keep,
+[839.55 - 844.55] keep considering that as you, as you, you know,
+[844.55 - 848.55] it's important to be able to pitch these things in ways that people
+[848.55 - 849.55] that aren't close to it,
+[849.55 - 850.55] can understand.
+[850.55 - 852.55] And so just think about that.
+[852.55 - 854.55] How do I explain this to someone who's cold?
+[854.55 - 856.55] Who doesn't know a darn thing about this?
+[856.55 - 857.55] Why should they care?
+[857.55 - 858.55] That.
+[858.55 - 860.55] Getting that crystal in your,
+[860.55 - 863.55] in your thinking is going to be important no matter what.
+[863.55 - 864.55] So it's time I'll spend.
+[864.55 - 865.55] Hey, Scott.
+[865.55 - 866.55] This is Karina.
+[866.55 - 868.55] Just to add to that. If you don't mind.
+[868.55 - 870.55] Um, I think this has always been a challenge.
+[870.55 - 871.55] Um,
+[871.55 - 875.55] even before I've joined get lab, uh, for many people is how to,
+[875.55 - 877.55] how to get there on some of this terminology.
+[877.55 - 879.55] Um, when those of us have.
+[879.55 - 880.55] Deep technical background.
+[880.55 - 886.55] Um, so.
+[886.55 - 890.55] My thought would be, is there a way that you can start sharing, uh,
+[890.55 - 894.55] you know, or applauding good examples of this so that the product
+[894.55 - 895.55] team can sort of,
+[896.55 - 900.55] Ruminate on this and develop that skill if, if we're not there yet.
+[900.55 - 901.55] Yeah.
+[901.55 - 907.55] Um, I thought Lucas were very well framed up.
+[907.55 - 910.55] Those, those two popped out at me as yeah,
+[910.55 - 912.55] that's the problem we're trying to solve.
+[912.55 - 916.55] Check those out. I'll look through for some other examples.
+[916.55 - 920.60] Thank you for the suggestion.
+[920.60 - 921.60] All right.
+[921.60 - 929.86] Uh, 3D we went long.
+[929.86 - 936.11] Um, we just have a ton of speakers, which I love that ever,
+[936.11 - 940.11] that lots of people get a chance to speak. So I'm, I'm good with that,
+[940.11 - 942.11] but we're going to have to.
+[942.11 - 945.11] We're going to have to limit the number of items.
+[945.11 - 947.11] Probably.
+[947.11 - 951.11] Uh, so it looks like there's some other ideas in here, perhaps themes.
+[951.11 - 952.11] Yeah. I mean,
+[953.11 - 956.11] if there are some that relate to each other, you could tell a story. Hey,
+[956.11 - 958.11] we're trying to approve this.
+[958.11 - 961.11] And then A, B, and C tied back to it.
+[961.11 - 964.11] I think it's okay to be pretty brief in your description.
+[964.11 - 966.11] As long as you're hitting what it is.
+[966.11 - 969.11] And if somebody's really interested, they can dive deep.
+[969.11 - 971.11] Thematic is a good idea.
+[971.11 - 974.11] Recorded video. If you really want to go deep.
+[974.11 - 976.11] Maybe it's technically complex.
+[977.11 - 979.11] That's a great idea.
+[979.11 - 982.11] And then you can just cover the customer value at a high level and
+[982.11 - 984.11] leave the detail to the video.
+[984.11 - 986.11] Uh, watch statistics.
+[986.11 - 988.11] I think Josh looked this up last time.
+[988.11 - 989.11] I think he.
+[989.11 - 992.97] Said there were a thousand. Oh, there we go.
+[992.97 - 993.97] Kenny's putting it in.
+[993.97 - 996.97] So somewhere between 500 and a thousand.
+[996.97 - 999.97] Um, to kind of add to the time, just a feedback.
+[999.97 - 1003.66] I was timing myself this time.
+[1003.66 - 1010.34] I was trying to figure out how to do that.
+[1010.34 - 1015.34] Um,
+[1015.34 - 1017.34] To kind of add to the time, just a feedback.
+[1017.34 - 1020.34] I was timing myself this time and I had two features.
+[1020.34 - 1021.34] Uh,
+[1021.34 - 1024.34] Listed and I hit three minutes and 14 seconds.
+[1024.34 - 1027.34] Obviously could shorten that. So when we talk about, you know,
+[1027.34 - 1030.34] I think somebody mentioned doing two or coupling it down.
+[1030.34 - 1031.34] Um,
+[1031.34 - 1034.34] It's interesting that I landed there with the, the two that I chose.
+[1034.34 - 1035.34] Yeah.
+[1035.34 - 1038.34] That feels about average, but we've had.
+[1038.34 - 1043.34] We'll probably have to be a couple of minutes max per person.
+[1043.34 - 1045.34] I mean, Eric pointed this out in the next line.
+[1045.34 - 1049.34] I do think we are due for a rethink of how we're.
+[1049.34 - 1050.34] Yeah.
+[1050.34 - 1053.34] Doing the kickoff cause we're going to have next month,
+[1053.34 - 1055.34] we're going to have 25 people.
+[1055.34 - 1059.34] Trying to give content and even at two minutes, you're already gone.
+[1059.34 - 1061.34] So yeah, maybe we expand it.
+[1061.34 - 1064.34] I will give a shout out for Jason.
+[1064.34 - 1067.34] I know because he's on paternity leave created a video,
+[1067.34 - 1072.34] but I think the original intent of the kickoff was actually just.
+[1072.34 - 1073.34] As a company,
+[1073.34 - 1076.34] we had a retrospective and a kickoff or retrospective immediately
+[1076.34 - 1079.34] followed by a kickoff and we just decided to post that on YouTube.
+[1079.34 - 1082.34] We now post a whole bunch of content on YouTube.
+[1082.34 - 1083.34] So just,
+[1083.34 - 1087.34] just having what you would normally do for your kind of like grooming
+[1087.34 - 1090.34] or kickoff within your individual group posted to YouTube and us,
+[1090.34 - 1095.34] maybe having a specific channel for people who wanted to follow it.
+[1095.34 - 1098.34] Anyway, we should discuss it in an issue and come up with something I do
+[1098.34 - 1102.34] think prior to next release kickoff.
+[1102.34 - 1106.34] Just to evaluate alternatives to the format.
+[1106.34 - 1107.34] Yeah.
+[1107.34 - 1109.34] I mean, I don't,
+[1109.34 - 1112.34] even if we said every person has one minute,
+[1112.34 - 1116.34] I feel like we're doing it this service because we're now.
+[1116.34 - 1120.34] Highlighting much less because we feel like we have a time constraint
+[1120.34 - 1124.34] and need to keep it into one synchronous 30 minute block.
+[1124.34 - 1126.34] We need to do that.
+[1126.34 - 1127.34] Okay.
+[1127.34 - 1131.34] Plus one to revamping it, I think.
+[1131.34 - 1134.34] I think we're trying to, it's like,
+[1134.34 - 1137.34] it's got so many jobs right now that we're not doing a good job at any,
+[1137.34 - 1139.34] they're one of them.
+[1139.34 - 1143.34] But I think that feels the most important customers are internal
+[1143.34 - 1145.34] and it's just like communicating internally about,
+[1145.34 - 1147.34] cause like people attend that thing, man.
+[1147.34 - 1150.34] We had like 50 people on the zoom call.
+[1150.34 - 1152.34] Alone, not even considering YouTube.
+[1152.34 - 1156.34] People were asking about what happened to YouTube link and things like that.
+[1156.34 - 1159.34] So it's, it's well attended internally.
+[1159.34 - 1161.34] I think there's for alignment.
+[1161.34 - 1166.34] So a little on the marketing value of like,
+[1166.34 - 1168.34] sort of like a release.
+[1168.34 - 1170.34] I mean, for professional customers,
+[1170.34 - 1175.34] it kind of feels like better off having like a webinar or live stream
+[1175.34 - 1177.34] on the release day.
+[1177.34 - 1179.34] Right.
+[1179.34 - 1185.34] Yeah, maybe the externally focused one would be more about what we just shipped.
+[1185.34 - 1190.68] There was a webinar that used to happen called release radar.
+[1190.68 - 1195.68] I think I participated in a couple of those three of them back to back
+[1195.68 - 1200.68] and they were pretty poorly attended from what my experience was.
+[1200.68 - 1205.68] And I think they actually got ended by the product marketing team for that reason.
+[1205.68 - 1208.68] I'm sure someone from that team could actually give feedback.
+[1208.68 - 1213.68] But I think one thing about the time limit is it's really hard to motivate
+[1213.68 - 1217.68] problems, particularly like in a short amount of time,
+[1217.68 - 1220.68] particularly when they're very technical, like as product categories
+[1220.68 - 1222.68] grow in maturity and sophistication,
+[1222.68 - 1225.68] like the problems become more and more specific that we're solving.
+[1225.68 - 1230.68] And so motivating those specific reasons and why we're going after like this
+[1230.68 - 1234.68] specific tiny piece of a very mature category.
+[1234.68 - 1237.68] It's hard to do it 30 seconds in a way that,
+[1237.68 - 1241.68] so if we want to do that better,
+[1241.68 - 1245.68] that's going to put more and more pressure on like communicating
+[1245.68 - 1248.68] a reasonable number of items, I think.
+[1248.68 - 1250.68] Okay.
+[1250.68 - 1252.68] Thank you all for the feedback.
+[1252.68 - 1258.68] I like the idea of creating an issue and perhaps tweaking the format before next month.
+[1258.68 - 1263.68] I also like the idea of asking internal and external constituents
+[1263.68 - 1266.68] what they like or don't like about the format.
+[1266.68 - 1268.68] Yeah, just one final thought on that.
+[1268.68 - 1271.68] I love that it's a half an hour.
+[1271.68 - 1278.68] I might almost even take particular categories over
+[1278.68 - 1283.68] lengthening the time as an example just because I had the feeling that if you want to watch it consistently,
+[1283.68 - 1285.68] it's going to be in that block.
+[1285.68 - 1287.68] But that's just me.
+[1288.68 - 1293.68] Other customers are saying they would like the larger block,
+[1293.68 - 1295.68] then that's the right way to go.
+[1295.68 - 1297.68] So that's where I'd love to get feedback in some fashion and say,
+[1297.68 - 1299.68] okay, here's how we should change it.
+[1299.68 - 1301.68] But we clearly have gone breath-wise.
+[1301.68 - 1305.68] We've gone so much broader that it's going to be hard to cover all those topics in a quick amount.
+[1305.68 - 1310.53] Okay.
+[1310.53 - 1313.53] Thanks, Kenny, for starting the issue.
+[1313.53 - 1315.53] James, over to you for number four.
+[1315.53 - 1320.10] Yeah, I just thought I'd share this.
+[1320.10 - 1327.10] I think many on this call haven't heard Mark Cunspat speak about product discovery sprints
+[1327.10 - 1335.10] that he advocated for this quite a number of times previously from his experience running these at a prior company.
+[1335.10 - 1340.10] So the idea is kind of different to a, I guess, a UX discovery sprint.
+[1340.10 - 1346.10] I think Fabian linked one of the books about that where it's really focused on UX iteration and research.
+[1346.10 - 1351.10] The product discovery sprint is more focused on kind of like actually building something,
+[1351.10 - 1356.10] iterating on something that's built and trying to get to some sort of MVC really quickly
+[1356.10 - 1359.10] by trying to make the process more synchronous.
+[1359.10 - 1366.10] So the source code group is going to try and do that around file-by-file diff navigation
+[1366.10 - 1372.10] to solve performance and usability problems in 12.3.
+[1372.10 - 1377.10] And I thought it'd be interesting to share that because internally we've been wrestling with,
+[1377.10 - 1382.10] like, how to make this work well in an async slash remote environment.
+[1382.10 - 1387.10] So we're looking at trying to confine the participants in a specific time zone
+[1387.10 - 1391.10] so that we can all be available with a significant amount of overlap.
+[1391.10 - 1397.10] But that's also difficult because it kind of excludes automatically 50% of the team
+[1397.10 - 1401.10] who are just geographically remote from any of their peers.
+[1401.10 - 1405.10] We only have one UX designer that's only available in the European time zone.
+[1405.10 - 1408.10] So some interesting challenges there.
+[1408.10 - 1413.10] If it goes well, we're going to try and replicate it a release or two later on a different problem
+[1413.10 - 1416.10] that is also really complicated and hard and we're going to make progress on quickly.
+[1416.10 - 1418.10] But I'll share any findings we have.
+[1418.10 - 1421.10] And if anyone's interested in discussing that with me more,
+[1421.10 - 1425.10] put a meeting in my calendar or drop me a message.
+[1425.10 - 1427.10] This is great, James.
+[1427.10 - 1431.10] By the way, I think the UX team is going to run.
+[1431.10 - 1435.10] Well, let me just say we have the option to run one with Google Ventures,
+[1435.10 - 1441.10] who's one of our investors in that sprint book that Fabian linked to,
+[1441.10 - 1444.10] was written by a guy from GV.
+[1444.10 - 1447.10] They did hundreds of these things for their clients.
+[1447.10 - 1448.10] They know what they're doing.
+[1448.10 - 1454.10] So if we get a chance to do one with them, we should.
+[1454.10 - 1459.10] We're going to have to figure out how to do it within our ASIC model though.
+[1459.10 - 1462.10] So whatever you learn from yours, James, please feed that back.
+[1462.10 - 1464.10] Super interesting topic.
+[1464.10 - 1469.10] I think if we could get good at this asynchronously, that would be a breakthrough.
+[1469.10 - 1476.10] Yeah, I think one other interesting challenge is that the sprint sort of terminology is kind of challenging.
+[1476.10 - 1481.10] And like it's not sustainable to be doing design sprints or discovery sprints on a daily basis.
+[1481.10 - 1487.10] Whether or not we were in person or not, it's not scalable to actually sprint all the time.
+[1487.10 - 1493.10] So choosing the right tasks, choosing the right time is, I think, one of the other challenges.
+[1493.10 - 1494.10] I agree.
+[1494.10 - 1499.10] Yeah, you don't want to do this for everything because, well, if you follow to the letter,
+[1499.10 - 1507.10] it takes a whole week and you're totally dedicated to it, which is amazing for focus sake,
+[1507.10 - 1510.10] but you can't get anything else done.
+[1510.10 - 1522.10] So depending on how we structure this, it would need to be done for things that are really big unknowns where dedicating a big chunk of time like that is worth it.
+[1522.10 - 1526.41] And not everything clears that bar.
+[1526.41 - 1534.41] I think it's also most relevant for stages that are very in various stages in the very beginning.
+[1534.41 - 1544.41] Kind of like that Tyron was like one of their biggest example for Google Ventures when they obviously like solving clinical trials for the world is like a super complex problem.
+[1544.41 - 1548.41] So they would just figure out what is this thing that we can do so that we can start getting there.
+[1548.41 - 1554.41] And I think these are the problems that the design sprint is useful.
+[1554.41 - 1562.41] We used it pretty successfully at my last company around pricing and packaging stuff and ran a bunch of interviews with customers on that.
+[1562.41 - 1566.41] So I've seen it work.
+[1566.41 - 1571.80] All right.
+[1571.80 - 1574.80] Okay, Christopher, number five.
+[1574.80 - 1576.80] Yeah, just want to call out.
+[1576.80 - 1587.80] We've over the past month, we've had a significant number of outages related to dot com and that affected at least one customer revenue potential.
+[1587.80 - 1592.80] And because of that, you know, we've had some some focus from an exact leadership perspective.
+[1592.80 - 1597.80] So I encourage everybody to look at that document and kind of look through it in particular.
+[1597.80 - 1599.80] There's a couple of things from an engineering perspective.
+[1599.80 - 1618.80] Make it aware of one is is we started infrastructure to development board where we're going to start matching issues up and trying to make sure that if that those get prioritized highly where appropriate, particularly for anything that, you know, affects performance around these issues.
+[1618.80 - 1628.80] The other issue that I put in there was one around that's listed specifically, which is around the fact of prioritizing P performance availability work.
+[1628.80 - 1639.80] So one of the significant features of this particular recent outage last week was is that the Redis server apparently can't handle the load anymore and we started digging into it.
+[1639.80 - 1641.80] We found a bunch of stuff that we hadn't checked.
+[1641.80 - 1645.80] And so as an example, RJ unit tests were basically going and getting cashed.
+[1645.80 - 1649.80] And there was no limit on the number of unit tests that could actually be cashed.
+[1649.80 - 1654.80] So we were getting these like blocks of like several megabytes of data that had to basically be transferred around and read us.
+[1654.80 - 1659.80] And that's really what's affecting its performance overall from a caching service perspective.
+[1659.80 - 1663.80] So consequently, Scott, I send that to you. I hope that's okay.
+[1663.80 - 1671.80] Yeah, it feels like it was like, you need to help out in regards to the fact of, you know, how do we best make sure that we get this kind of systematically going.
+[1671.80 - 1680.80] And I just want to make sure that kind of everybody was aware and just kind of open up for discussion if there were any questions or any feedback early feedback on it from that perspective.
+[1680.80 - 1683.80] I added some comments to it Christopher.
+[1683.80 - 1686.80] Okay, I haven't had a chance to look I apologize about that.
+[1686.80 - 1687.80] No problem.
+[1687.80 - 1696.80] Can I ask do we and maybe Mac this is a question for you. Do we categorize performance issues as bugs.
+[1696.80 - 1701.80] We do have a performance label, but they should be under under bugs.
+[1701.80 - 1703.80] Okay.
+[1703.80 - 1713.80] This is an example where oftentimes the way we treat performances is a reactionary. This is trying to think about it more in a proactive way so like as an example.
+[1714.80 - 1722.80] But when I worked at Amazon tags, originally when Amazon was created tags were, they were expecting them just to label, you know, certain instances and that was it.
+[1722.80 - 1733.80] And it turns out that all customers started using like 20 and 30 or 50 tags and they're like what the heck's going on and they realize tags were being used to basically share environmental information so the VMs could, they could put the same drop of code on two different
+[1733.80 - 1745.80] VMs and they could behave differently based on the tag, which was a total novel way for customers to use it so then they had to basically limit the number of tags that they could use because it wasn't scaling with the system effectively.
+[1745.80 - 1760.80] So like this is kind of another example where like I think we got to start thinking in terms of, you know, like when we create something new, a new feature of piece of functionality like what's the cost associated with that right because like it does cost some something internal and I'm not asking product
+[1761.80 - 1775.80] managers to necessarily think in terms of the exact bytes, but I am starting to think in terms of like, you know, what are the expectations around it because like as an example, if we went back and looked at G unit tests or reporting, you know, if we said unlimited, that's, you know, that's a tough
+[1775.80 - 1786.80] engineering call, right, particularly I guess it's free right now for customers is my understanding. We also don't have a number of repos mirror, we don't have a limit on that, and that that seems dangerous.
+[1787.80 - 1798.80] Yeah, so I guess I would comment, you know, I think the product team is expected to prioritize all things and to understand them deeply whether they're a security issue or performance concern.
+[1798.80 - 1810.80] I think what you're highlighting is in order to be proactive I don't know if the product team would immediately know the impact of a proposed change but maybe that's an opportunity for our
+[1810.80 - 1819.80] infrastructure SRE stable counterparts to be involved in vetting and looking at issues early in the pipeline to decide whether or not they would
+[1819.80 - 1834.80] Yeah, or, or let's say we're implementing a feature like let's say we were implementing mirroring from scratch. Like the first question we should be asking is like how many how many mirrors as a customer expected to be able to support and what I want to start charging for if they get above a certain limit and you know, and right now we don't.
+[1835.80 - 1846.80] And you could argue that scaling is just as much a reason for customers to start paying us as his feature sets. That's, that's, that's kind of the argument I would be making.
+[1847.80 - 1850.80] Because those things cost money, like whether we like to admit it or not.
+[1851.80 - 1861.80] Yeah, Christopher, I would, I would agree with you on what you're trying to sort of shape up and call out here in the sense of, you know, going through pages for example,
+[1861.80 - 1872.80] performance of getting those page loads loaded is not great and I don't know if we set out originally to track some of those performance things.
+[1873.80 - 1879.80] But I think that performance and into your point can I think performance should be somewhere incorporated.
+[1881.80 - 1886.80] As we move forward and something we should be thinking about for scalability across the board.
+[1887.80 - 1897.80] Because it's just as important as bringing forth that really cool thing to them is that that really cool thing works and people will stay there to use it.
+[1897.80 - 1912.88] I think just as a side note, I think we have something the product and work that I read like a couple days ago on performance, something like fast applications are like always, you know, like more usable.
+[1913.88 - 1915.88] And I think that's, that's definitely important.
+[1915.88 - 1919.88] And I also think that get that.com is massive.
+[1919.88 - 1921.88] I think we have four million users.
+[1921.88 - 1932.88] And for example, for geo, I know that only by actually like interacting with the infrastructure, we are getting feedback on some of the performance bottlenecks that we are just not seeing otherwise.
+[1932.88 - 1936.88] And so I think that's actually also really valuable.
+[1936.88 - 1942.88] And in that regard, maybe also, like again, you know, dog fooding, these things helps.
+[1942.88 - 1946.88] And I think with the combination of CD, we may hit a lot of those things at the moment.
+[1947.88 - 1951.88] Yeah. And the dog fooding thing on that front is a little confusing to me. I met with
+[1952.88 - 1965.88] Marin to talk about that. And, you know, there's sort of this mentality of looking at.com first are leading with.com for scalability. And I just, it's not really Chris to me where we're going
+[1965.88 - 1975.88] from making sure that we're, you know, how we approach making sure that we intact scalability for.com if we're starting with.com or are we starting somewhere else
+[1977.88 - 1978.88] from a dog fooding perspective.
+[1978.88 - 1989.88] I'm pretty sure the handbook says that we're meant to, well, at least the guidelines used to be that for new features that were meant to be available on gitlab.com and self-hosted at the same time.
+[1989.88 - 1998.88] And that there used to be a production ready checklist that I think the engineering team was responsible for.
+[1998.88 - 2001.88] I know that for when we launched GEO, there was a production readiness process that we had to go through.
+[2001.88 - 2012.88] And certainly with Giddily, we consider these things on the source code front were regularly considering scale like moving terabytes of data from the database into object storage and considering all these sorts of things.
+[2012.88 - 2016.88] Performance is very much a feature and should be considered that.
+[2016.88 - 2028.88] And I think particularly in categories where adoption is still growing and in early stages of maturity, performance, like understandably, is less of a concern because there's lower usage.
+[2028.88 - 2036.88] So like solving scale at like an enormous level doesn't make sense commercially, like necessarily when usage is small.
+[2036.88 - 2043.88] So there is a bit of a juggling act here because we don't want to build a product for billions of users.
+[2043.88 - 2048.88] If there's only, I don't know, 20,000 users experimenting with our newest feature.
+[2048.88 - 2051.88] So there's an iterative approach that needs to be taken.
+[2051.88 - 2058.88] But I would agree that particularly coming from a team that's digging out a lot of technical debt and solving a lot of performance problems all the time,
+[2058.88 - 2067.88] would probably historically not being very good at picking the right moment to pay off technical debt and address performance problems until they've become fires.
+[2068.88 - 2074.88] Yeah, so to that point, just real quick, James, and sorry, Scott.
+[2074.88 - 2076.88] I think some things are obvious.
+[2076.88 - 2090.88] Like when we look at our progressive deliveries strategy, I think that we like if you look at something like feature flags or something like that, like that's something that I think is going to be like I wouldn't imagine that that's not going to be a key feature that we're going to bring forward.
+[2090.88 - 2097.88] So I feel like that should be a give me on whether adoption has yet struck or not.
+[2097.88 - 2108.88] But the second thing that is not clear to me like again, when I was interviewing Marin about dog fooding, is that I noticed that Marin's like we don't this isn't we weren't they didn't come to us first.
+[2108.88 - 2112.88] And so this is not scalable or this is not usable for us internally.
+[2112.88 - 2122.88] And so it's like the approach and process moving forward to dog food in the right spots is not clear to me or what the best practices have been or if anybody's, you know, crack that.
+[2122.88 - 2129.88] Yeah, I can give a concrete example because I did a call with Marin a few months back around confidential merge requests.
+[2129.88 - 2132.88] So we knew that customers wanted to resolve them.
+[2132.88 - 2136.88] We knew that we wanted to do that and we're trying to get rid of dev.gitlab.org.
+[2136.88 - 2140.88] So I had a video call with him and a bunch of async conversations with like,
+[2140.88 - 2143.88] I've got these ideas for what a first iteration looks like.
+[2143.88 - 2147.88] And then we did a few calls and worked through them and worked out which were the things that needed to happen.
+[2147.88 - 2150.88] And so we're shipping the first iteration of that and 12.1.
+[2150.88 - 2160.88] But we coordinated with them and I spoke with Marin quite a lot to make sure whatever we were building was useful and would solve the security problems that they had as well as our own ones.
+[2160.88 - 2163.88] So, yeah, I agree. It needs to be proactive.
+[2163.88 - 2170.88] We're not going to ship something's useful or that the infrastructure team is going to want to opt into unless we've had a conversation with them in advance.
+[2170.88 - 2172.88] All right.
+[2172.88 - 2177.88] It's 130 sec. Can I add one last tiny point?
+[2177.88 - 2183.88] It's sometimes really important for customers as well that we're running it on gitlab.com before they adopt it.
+[2183.88 - 2188.88] So one example is we built SSL TLS support in Giddily.
+[2188.88 - 2191.88] But it's not turned on in Giddily.com.
+[2191.88 - 2199.88] And so the customer that we built it for isn't using it because they're waiting for our production team to turn it on because they want to see before they turn it on for their enormous instance.
+[2199.88 - 2205.88] Have we actually proven it at the world's largest Giddily instance scale?
+[2205.88 - 2212.88] So I think that's one important reason why we always need to make sure that features are on and are getting used on Giddily.com.
+[2213.88 - 2216.88] Sorry, I've got a couple of things.
+[2216.88 - 2221.88] I think we definitely need to have a stronger definition of done as part of our progressives delivery, right?
+[2221.88 - 2229.88] And so part of the definition of done is it needs to run at scale and gitlab.com successfully and not below the cost model, not below performance.
+[2229.88 - 2232.88] And if it does, it just gets immediately reverted, frankly.
+[2232.88 - 2235.88] And that should be the bar for getting features across the line.
+[2235.88 - 2242.88] That doesn't mean for new features, you know, that have low usage that, you know, I was, they're impacted quite small.
+[2242.88 - 2244.88] But these still, it needs to be within reason.
+[2244.88 - 2250.88] I totally agree that you don't want to over build on the first iteration for planning for millions of users.
+[2250.88 - 2252.88] That doesn't make any sense.
+[2252.88 - 2254.88] But yeah, I think that's one aspect.
+[2254.88 - 2260.88] I think their aspect is that on your comment, Christopher, on pricing and we can maybe have a follow up here on like a handbook update.
+[2260.88 - 2268.88] But I think it's interesting that customers will absorb the cost on self managed of compute.
+[2268.88 - 2277.88] And so for them, if they want to have a ridiculous number of, you know, mirrors, then, you know, then it's fine because they're paying for it.
+[2277.88 - 2279.88] So use cases on their dime.
+[2279.88 - 2282.88] And so maybe a way to think about this is to have some level of controls.
+[2282.88 - 2292.88] You can set if you want to use this level of sort of have some way to control that amount of behavior for when we're covering the cost of those things.
+[2292.88 - 2295.88] But yeah, anyways.
+[2295.88 - 2296.88] Thank you all.
+[2296.88 - 2297.88] Great topic.
+[2297.88 - 2303.88] Christopher, please pile on that issue with thoughts on how to how to handle this.
+[2303.88 - 2309.88] So like you're suggesting on definition of done, Josh.
+[2309.88 - 2312.88] All right, Karina six and seven.
+[2312.88 - 2313.88] Yes.
+[2313.88 - 2318.88] So I submitted an MR for the product 10 book yesterday.
+[2318.88 - 2327.88] And we're going through this process of getting more self organized in the release area.
+[2327.88 - 2331.88] And with our engineering and user design partners.
+[2331.88 - 2344.88] You know, one of the things that we recognize and it's documented in the issue below and number seven is, you know, one, our delivery percentage is not been great, which you heard me talk about.
+[2344.88 - 2358.88] But has been a ramp that we need to self organize around some method and what we found and sort of the last prioritization for release scope is that we have a lot of oversized issues and features.
+[2358.88 - 2368.88] That, you know, honestly, need a need a beat or a release to go through user research.
+[2368.88 - 2377.88] Maybe look at the code if they've never seen the code look, you know, reviewed that piece of code before, or makes the recommendations on the best way to solve.
+[2377.88 - 2388.88] So I put some thinking around, you know, that sort of, you know, that dual track mindset dual track agile kind of launching off of what user experience has recently updated for dual track agile.
+[2388.88 - 2400.88] So feedback on that. And then the second piece is that this experiment running is we're leveraging semi dual track agile approach, just to organize our conversation.
+[2400.88 - 2411.88] So open issues for areas that we need a discovery beat versus presenting an issue that is actually ready for delivery.
+[2411.88 - 2422.88] One thing that was interesting Scott, and we were talking about, you know, just the kickoff call and having some, you know, you know, images and more to share.
+[2422.88 - 2433.88] So definitely where I think we'd like to be with release is getting ahead of that curve and really having some concrete understanding and prototypes of what we're trying to present and deliver.
+[2433.88 - 2446.88] But when we looked at sort of kind of going through that process, you know, this is really for complex things or heavy lifting, because, you know, it is about a 20 to 30 day lead time to commit release.
+[2446.88 - 2454.88] And so we have some targets to improve, you know, our hypothesis on leveraging this.
+[2454.88 - 2462.88] You can follow it there if you have input but it kind of tie together, but I love input on the handbook piece.
+[2462.88 - 2468.88] Thank you Karina for creating these and sharing these I think you're on the right track.
+[2468.88 - 2481.88] Hello, I've been working with like Christopher and Eric and Christie to outline a high level description of our software development lifecycle which will have two tracks.
+[2481.88 - 2495.88] This is sort of competing content there or maybe or maybe they could be merged so thank you for doing this I may slow roll it a little bit to make sure that we have one way of describing the flow we'd like to go through but
+[2495.88 - 2508.02] Thank you very much for getting it kicked off. Any questions for Karina. If not, Joshua, what do you
+[2508.02 - 2515.62] Yeah, just a risk announcement, I just went through a renamed promise label to playing priority.
+[2515.62 - 2522.62] General meaning is large in the same although we shouldn't be promising features and so this is just a way to flag it.
+[2522.62 - 2530.62] And that way it's reminder for pms that this issue had some important select conditional dependencies and so just be aware of it.
+[2530.62 - 2532.62] So you can feel free to use it.
+[2532.62 - 2540.62] I did note in the label text that it should only be applied by product managers and in particular the responsible product manager for that section.
+[2540.62 - 2544.62] So it shouldn't get applied by Pam or anyone else.
+[2544.62 - 2551.93] Awesome. I like that terminology a lot better. Thank you, Josh.
+[2551.93 - 2557.07] All right, five minutes to spare anything else.
+[2557.07 - 2559.07] If not have a great Tuesday.
