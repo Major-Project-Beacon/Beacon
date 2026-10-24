@@ -1,0 +1,10 @@
+numpy
+pandas
+deepface
+tensorflow
+tf-keras
+pyobjc-framework-Quartz; sys_platform == "darwin"
+mss; sys_platform == "win32"
+werkzeug
+# DeepFace installs a headless OpenCV variant; keep the GUI build for cv2.imshow.
+opencv-python==4.10.0.84
